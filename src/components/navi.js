@@ -46,6 +46,7 @@ const NAVI = (props) => {
               color: "white",
               border: "solid",
               borderColor: "orange",
+              borderWidth: "0.5px",
             }}
             theme={darkTheme({
               modalBg: "transparent",
@@ -103,6 +104,7 @@ const NAVI = (props) => {
                   color: "white",
                   border: "solid",
                   borderColor: "orange",
+                  borderWidth: "1px",
                 }}
                 theme={darkTheme({
                   modalBg: "black",
