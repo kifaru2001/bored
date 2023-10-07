@@ -1,0 +1,304 @@
+.footer-footer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+}
+.footer-content {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fiveunits);
+  border-color: #313133;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+  border-top-width: 1px;
+}
+.footer-main {
+  gap: 240px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footer-branding {
+  gap: var(--dl-space-space-twounits);
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-image {
+  width: 241px;
+  height: 150px;
+  object-fit: cover;
+}
+.footer-text {
+  color: rgb(124, 124, 128);
+  font-family: "Pixel NES";
+  line-height: 24px;
+}
+.footer-links {
+  gap: 120px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.footer-column {
+  gap: var(--dl-space-space-threeunits);
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-header {
+  font-size: 24px;
+  font-style: italic;
+  font-family: "Pixel NES";
+  font-weight: 500;
+}
+.footer-list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-navlink {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink:hover {
+  opacity: .5;
+}
+.footer-navlink01 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink01:hover {
+  opacity: .5;
+}
+.footer-text1 {
+  font-family: """""Pixel NES""""";
+}
+.footer-navlink02 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink02:hover {
+  opacity: .5;
+}
+.footer-column1 {
+  gap: var(--dl-space-space-threeunits);
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-header1 {
+  font-size: 24px;
+  font-style: italic;
+  font-family: "Pixel NES";
+  font-weight: 500;
+}
+.footer-list1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-navlink03 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink03:hover {
+  opacity: .5;
+}
+.footer-navlink04 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink04:hover {
+  opacity: .5;
+}
+.footer-navlink05 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink05:hover {
+  opacity: .5;
+}
+.footer-navlink06 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink06:hover {
+  opacity: .5;
+}
+.footer-navlink07 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink07:hover {
+  opacity: .5;
+}
+.footer-navlink08 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink08:hover {
+  opacity: .5;
+}
+.footer-navlink09 {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  line-height: 32px;
+  text-decoration: none;
+}
+.footer-navlink09:hover {
+  opacity: .5;
+}
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-text3 {
+  color: rgb(124, 124, 128);
+  font-size: 14px;
+  font-family: "Pixel NES";
+  line-height: 21px;
+}
+
+@media(max-width: 991px) {
+  .footer-footer {
+    background-color: #000000;
+  }
+  .footer-content {
+    border-top-width: 0px;
+  }
+  .footer-main {
+    gap: var(--dl-space-space-threeunits);
+    flex-direction: column;
+  }
+  .footer-branding {
+    width: 100%;
+  }
+}
+@media(max-width: 767px) {
+  .footer-footer {
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .footer-content {
+    width: 573px;
+  }
+  .footer-main {
+    width: 687px;
+  }
+  .footer-branding {
+    width: 713px;
+  }
+  .footer-links {
+    gap: var(--dl-space-space-fiveunits);
+    flex-direction: row;
+  }
+}
+@media(max-width: 479px) {
+  .footer-footer {
+    width: 478px;
+    align-items: center;
+  }
+  .footer-content {
+    width: 395px;
+  }
+  .footer-main {
+    width: 390px;
+    align-items: center;
+  }
+  .footer-branding {
+    width: 284px;
+    height: 220px;
+  }
+  .footer-image {
+    width: 50%;
+    height: 84px;
+    align-self: center;
+  }
+  .footer-text {
+    align-self: center;
+    text-align: center;
+  }
+  .footer-links {
+    gap: var(--dl-space-space-threeunits);
+    flex-direction: column;
+  }
+  .footer-column {
+    align-items: center;
+  }
+  .footer-list {
+    align-items: center;
+  }
+  .footer-navlink01 {
+    line-height: 32px;
+  }
+  .footer-text1 {
+    font-family: Pixel NES;
+  }
+  .footer-column1 {
+    align-items: center;
+  }
+  .footer-list1 {
+    align-items: center;
+  }
+  .footer-bottom {
+    gap: var(--dl-space-space-twounits);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-root-class-name {
+    background-color: transparent;
+  }
+}

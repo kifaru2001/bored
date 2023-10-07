@@ -1,0 +1,108 @@
+.objectives-objectives {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.objectives-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fiveunits);
+  border-color: #313133;
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-fiveunits);
+  justify-content: space-between;
+  border-top-width: 1px;
+}
+.objectives-objectives-list {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  align-items: flex-start;
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.objectives-text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-style: normal;
+  font-family: "Pixel NES";
+  font-weight: 500;
+}
+.objectives-text1 {
+  color: rgb(124, 124, 128);
+  font-family: "Pixel NES";
+  line-height: 24px;
+}
+.objectives-text2 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-style: normal;
+  font-family: "Pixel NES";
+  font-weight: 500;
+}
+.objectives-text3 {
+  color: rgb(124, 124, 128);
+  font-family: "Pixel NES";
+  line-height: 24px;
+}
+.objectives-text4 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-style: normal;
+  font-family: "Pixel NES";
+  font-weight: 500;
+}
+.objectives-text5 {
+  color: rgb(124, 124, 128);
+  font-family: "Pixel NES";
+  line-height: 24px;
+}
+@media(max-width: 991px) {
+  .objectives-content {
+    gap: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .objectives-objectives-list {
+    padding-right: 0px;
+  }
+}
+@media(max-width: 767px) {
+  .objectives-objectives {
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .objectives-content {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-bottom: var(--dl-space-space-threeunits);
+  }
+  .objectives-objectives-list {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media(max-width: 479px) {
+  .objectives-objectives {
+    height: 596px;
+  }
+  .objectives-content {
+    height: 756px;
+    border-top-width: 0px;
+  }
+  .objectives-text {
+    font-size: 18px;
+  }
+  .objectives-text2 {
+    font-size: 18px;
+  }
+  .objectives-text4 {
+    font-size: 18px;
+  }
+}

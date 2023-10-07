@@ -1,0 +1,71 @@
+.header-container-header-container {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 1312px;
+  height: 1247px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-container-header {
+  height: 476px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.header-container-caption {
+  font-size: 24px;
+  max-width: 600px;
+  font-family: "Pixel NES";
+  line-height: 36px;
+}
+.header-container-text {
+  color: #7b7b7b;
+}
+.header-container-text1 {
+  color: #e87d02;
+}
+.header-container-text2 {
+  color: #7b7b7b;
+}
+@media(max-width: 1600px) {
+  .header-container-header-container {
+    height: 950px;
+  }
+}
+@media(max-width: 1200px) {
+  .header-container-header-container {
+    width: 827px;
+    height: 1255px;
+  }
+}
+@media(max-width: 991px) {
+  .header-container-header-container {
+    width: 810px;
+  }
+}
+@media(max-width: 767px) {
+  .header-container-header-container {
+    width: 477px;
+  }
+  .header-container-header {
+    height: 587px;
+  }
+}
+@media(max-width: 479px) {
+  .header-container-header-container {
+    width: 352px;
+    height: 575px;
+    padding-right: 0px;
+  }
+  .header-container-header {
+    height: 293px;
+  }
+  .header-container-caption {
+    color: #c7c7c7;
+    width: 263px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

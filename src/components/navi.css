@@ -1,0 +1,334 @@
+.navi-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.972);
+}
+.navi-navbar-interactive {
+  color: #d8d8d8;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+}
+.navi-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.navi-navlink {
+  display: contents;
+}
+.navi-image {
+  width: 100px;
+  height: 55px;
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.navi-container2 {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navi-navlink1 {
+  color: #bebebe;
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.navi-desktop-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.navi-links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.navi-text {
+  font-family: "Pixel NES";
+  border-color: #e7e7e7;
+  border-width: 1px;
+  margin-right: 0px;
+  padding-right: var(--dl-space-space-unit);
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 0px;
+}
+.navi-text01 {
+  font-family: "Pixel NES";
+  margin-left: var(--dl-space-space-twounits);
+  border-width: 1px;
+  padding-right: var(--dl-space-space-unit);
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+}
+.navi-text02 {
+  font-family: "Pixel NES";
+  margin-left: var(--dl-space-space-twounits);
+  border-color: #f5f5f5;
+  border-width: 1px;
+  padding-right: var(--dl-space-space-unit);
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 0px;
+}
+.navi-text03 {
+  font-family: "Pixel NES";
+  margin-left: var(--dl-space-space-twounits);
+  border-color: #e3e3e3;
+  border-width: 1px;
+  padding-right: var(--dl-space-space-unit);
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 0px;
+}
+.navi-text04 {
+  font-family: "Pixel NES";
+  margin-left: var(--dl-space-space-twounits);
+  border-color: #e1e1e1;
+  border-width: 1px;
+  padding-right: var(--dl-space-space-unit);
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+}
+.navi-text05 {
+  font-family: "Pixel NES";
+  margin-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-unit);
+}
+.navi-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navi-register {
+  color: var(--dl-color-gray-black);
+  width: 269px;
+  height: 32px;
+  font-family: "Pixel NES";
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgb(208, 208, 208);
+}
+.navi-burger-menu {
+  display: none;
+}
+.navi-icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.navi-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: absolute;
+  font-family: "" Pixel NES "";
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.navi-nav {
+  display: flex;
+  align-items: flex-start;
+  font-family: "" Pixel NES "";
+  flex-direction: column;
+}
+.navi-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.navi-logo {
+  height: 2rem;
+}
+.navi-close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navi-icon02 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.navi-links1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  font-family: "Pixel NES";
+  flex-direction: column;
+}
+.navi-text06 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.navi-text07 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.navi-text08 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.navi-text09 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.navi-text10 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.navi-text11 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.navi-icon04 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.navi-icon06 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
+.navi-icon08 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.navi-root-class-name {
+  margin-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(0, 0, 0, 0.945);
+}
+
+@media (max-width: 991px) {
+  .navi-links {
+    width: 710px;
+    height: 124px;
+  }
+  .navi-register {
+    width: 134px;
+    height: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .navi-navbar-interactive {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .navi-image {
+    width: auto;
+  }
+  .navi-desktop-menu {
+    display: none;
+  }
+  .navi-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navi-icon {
+    fill: #d9d9d9;
+    width: 48px;
+    height: 45px;
+  }
+  .navi-mobile-menu {
+    color: #eaeaea;
+    background-color: #000000;
+  }
+  .navi-text06 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navi-text07 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navi-text08 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navi-text09 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navi-text10 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navi-text11 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+@media (max-width: 479px) {
+  .navi-navbar-interactive {
+    color: #ffffff;
+    padding: var(--dl-space-space-unit);
+    padding-right: 16px;
+  }
+  .navi-image {
+    width: auto;
+    height: 44px;
+  }
+  .navi-icon {
+    fill: #d9d9d9;
+    width: 62px;
+    height: 44px;
+  }
+  .navi-mobile-menu {
+    color: #ffffff;
+    padding: 16px;
+    background-color: #000000;
+  }
+  .navi-nav {
+    width: 289px;
+  }
+  .navi-top {
+    width: 268px;
+    height: 40px;
+  }
+  .navi-icon02 {
+    fill: #d9d9d9;
+  }
+  .navi-text06 {
+    font-family: Pixel NES;
+  }
+  .navi-text07 {
+    font-family: Pixel NES;
+  }
+  .navi-text08 {
+    font-family: Pixel NES;
+  }
+  .navi-text09 {
+    font-family: Pixel NES;
+  }
+  .navi-text10 {
+    font-family: Pixel NES;
+  }
+  .navi-text11 {
+    font-family: Pixel NES;
+  }
+}

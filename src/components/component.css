@@ -1,0 +1,327 @@
+.component-container {
+  width: 100%;
+  height: 1071px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.component-pricing {
+  width: 100%;
+  height: 972px;
+  display: flex;
+  justify-content: center;
+}
+.component-container1 {
+  width: 100%;
+  height: 808px;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+}
+.component-pricing-card {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: 450px;
+  min-height: 450px;
+  transition: 0.3s;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  margin-right: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  background-color: var(--dl-color-gray-white);
+}
+.component-pricing-card:hover {
+  transform: scale(1.02);
+}
+.component-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-twounits);
+  text-transform: uppercase;
+}
+.component-container2 {
+  width: 289px;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: row;
+}
+.component-text01 {
+  font-size: 1.15rem;
+  margin-top: var(--dl-space-space-twounits);
+  font-weight: 300;
+}
+.component-text02 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.component-container3 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.component-text05 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-text06 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-text07 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-text08 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-button {
+  color: var(--dl-color-gray-white);
+  margin-top: auto;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-gray-black);
+}
+.component-pricing-card1 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  max-width: 450px;
+  min-height: 450px;
+  transition: 0.3s;
+  align-items: flex-start;
+  margin-right: var(--dl-space-space-twounits);
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  background-color: var(--dl-color-gray-white);
+}
+.component-pricing-card1:hover {
+  transform: scale(1.02);
+}
+.component-text09 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-twounits);
+  text-transform: uppercase;
+}
+.component-container4 {
+  width: 289px;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: row;
+}
+.component-text10 {
+  font-size: 1.15rem;
+  margin-top: var(--dl-space-space-twounits);
+  font-weight: 300;
+}
+.component-text11 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.component-container5 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.component-text14 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-text15 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-text16 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-text17 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-button1 {
+  color: var(--dl-color-gray-white);
+  margin-top: auto;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-gray-black);
+}
+.component-pricing-card2 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: 450px;
+  min-height: 450px;
+  transition: 0.3s;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  background-color: var(--dl-color-gray-white);
+}
+.component-pricing-card2:hover {
+  transform: scale(1.02);
+}
+.component-text18 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-twounits);
+  text-transform: uppercase;
+}
+.component-container6 {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: row;
+}
+.component-text19 {
+  font-size: 1.15rem;
+  margin-top: var(--dl-space-space-twounits);
+  font-weight: 300;
+}
+.component-text20 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.component-container7 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.component-text21 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-text22 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-text23 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.component-button2 {
+  color: var(--dl-color-gray-white);
+  margin-top: auto;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-gray-black);
+}
+@media(max-width: 991px) {
+  .component-container1 {
+    margin-right: 191px;
+  }
+  .component-pricing-card {
+    width: 100%;
+    padding: var(--dl-space-space-twounits);
+    max-width: 100%;
+    align-items: center;
+  }
+  .component-pricing-card1 {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .component-pricing-card2 {
+    width: 100%;
+    height: 639px;
+    max-width: 100%;
+    align-items: center;
+  }
+}
+@media(max-width: 767px) {
+  .component-container1 {
+    flex-flow: column;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .component-pricing-card {
+    width: 100%;
+    max-width: 450px;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .component-pricing-card1 {
+    width: 100%;
+    max-width: 450px;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .component-pricing-card2 {
+    width: 100%;
+    max-width: 450px;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .component-container {
+    width: 478px;
+    height: 1440px;
+    margin-top: 0px;
+  }
+  .component-pricing {
+    width: 478px;
+    height: 723px;
+  }
+  .component-container1 {
+    padding-top: var(--dl-space-space-twounits);
+    margin-right: 0px;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .component-pricing-card {
+    width: 354px;
+    align-items: center;
+    justify-content: center;
+  }
+  .component-pricing-card1 {
+    width: 350px;
+    height: 393px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .component-container5 {
+    margin-bottom: 0px;
+  }
+  .component-button1 {
+    color: var(--dl-color-gray-white);
+    width: 283px;
+    background-color: var(--dl-color-gray-black);
+  }
+  .component-pricing-card2 {
+    width: 345px;
+    height: 632px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .component-container7 {
+    height: 101px;
+    margin-bottom: 0px;
+  }
+  .component-button2 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .component-text25 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}

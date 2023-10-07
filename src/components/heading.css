@@ -1,0 +1,110 @@
+.heading-container {
+  width: 1724px;
+  height: 795px;
+  display: flex;
+  position: relative;
+}
+.heading-container1 {
+  flex: 0 0 auto;
+  width: 1782px;
+  display: flex;
+  align-items: center;
+  padding-left: Unit;
+  justify-content: flex-start;
+}
+.heading-heading {
+  width: 1046px;
+  height: 445px;
+  font-size: 90px;
+  max-width: 790px;
+  font-style: normal;
+  transition: 0.3s;
+  font-family: "Pixel NES";
+  font-weight: 500;
+  padding-left: var(--dl-space-space-twounits);
+}
+.heading-heading:hover {
+  animation: inherit;
+}
+.heading-text {
+  color: #ffffff;
+}
+.heading-text2 {
+  color: #de6b00;
+}
+
+@media(max-width: 1600px) {
+  .heading-container {
+    height: 1054px;
+  }
+  .heading-container1 {
+    width: 1165px;
+  }
+}
+@media(max-width: 1200px) {
+  .heading-heading {
+    width: 943px;
+    height: 400px;
+  }
+}
+@media(max-width: 991px) {
+  .heading-container1 {
+    width: 729px;
+  }
+  .heading-heading {
+    width: 966px;
+  }
+}
+@media(max-width: 767px) {
+  .heading-container1 {
+    height: 1042px;
+  }
+  .heading-heading {
+    width: 618px;
+    height: 290px;
+    font-size: 60px;
+    margin-top: 363px;
+    padding-left: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .heading-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .heading-container1 {
+    width: 417px;
+    height: 1050px;
+    align-self: center;
+  }
+  .heading-heading {
+    width: 387px;
+    height: 137px;
+    font-size: 36px;
+    max-width: auto;
+    align-self: center;
+    font-style: normal;
+    margin-top: 134px;
+    font-family: Pixel NES;
+    font-weight: 500;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .heading-text {
+    color: #e8e8e8;
+  }
+  .heading-text1 {
+    color: #e8e8e8;
+  }
+  .heading-text2 {
+    color: #ff7302;
+  }
+  .heading-text3 {
+    color: #ffffff;
+  }
+  .heading-root-class-name {
+    width: auto;
+    align-self: center;
+  }
+}

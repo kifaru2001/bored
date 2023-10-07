@@ -1,29 +1,45 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
+import ReactDOM from "react-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+
+import "./style.css";
+import Home from "./views/home";
+import Join from "./views/join";
+import NotFound from "./views/not-found";
 import reportWebVitals from "./reportWebVitals";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
-import "./styles/globals.css";
+import { CoreBlockchain } from "@thirdweb-dev/chains";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 
-// This is the chain your dApp will work on.
-// Change this to the chain your app is built for.
-// You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "ethereum";
+const sdk = new ThirdwebSDK(CoreBlockchain, {
+  clientId: "65a85b91315ca838d7a8472fb0e64f92",
+});
 
-const container = document.getElementById("root");
-const root = createRoot(container);
-root.render(
-  <React.StrictMode>
-    <ThirdwebProvider
-      activeChain={activeChain}
-      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
-    >
-      <App />
-    </ThirdwebProvider>
-  </React.StrictMode>
-);
+const activeChain = CoreBlockchain;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App = () => {
+  return (
+    <React.StrictMode>
+      <ThirdwebProvider
+        activeChain={activeChain}
+        clientId="65a85b91315ca838d7a8472fb0e64f92"
+      >
+        <Router>
+          <Switch>
+            <Route component={Home} exact path="/" />
+            <Route component={Join} exact path="/join" />
+            <Route component={NotFound} path="**" />
+            <Redirect to="**" />
+          </Switch>
+        </Router>
+      </ThirdwebProvider>
+    </React.StrictMode>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById("app"));

@@ -1,0 +1,119 @@
+.slider-slider {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fiveunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+  justify-content: flex-start;
+}
+.slider-header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.slider-heading {
+  color: var(--dl-color-gray-500);
+  font-size: 55px;
+  max-width: 900px;
+  font-style: normal;
+  font-family: "Pixel NES";
+  font-weight: 400;
+  text-gradient: "45deg, $blue600 -20%, $pink600 50%";
+}
+.slider-text {
+  color: #fff945;
+}
+.slider-text2 {
+  color: #ffdd46;
+}
+.slider-selector {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slider-caption {
+  color: #bdbdbd;
+  font-size: 18px;
+  max-width: 600px;
+  font-family: "Pixel NES";
+  line-height: 36px;
+}
+.slider-caption1 {
+  color: #bbbbbb;
+  font-size: 18px;
+  max-width: 600px;
+  font-family: "Pixel NES";
+  line-height: 36px;
+}
+@media(max-width: 991px) {
+  .slider-heading {
+    font-size: 55px;
+    font-style: normal;
+    font-family: Pixel NES;
+    font-weight: 400;
+  }
+  .slider-selector {
+    gap: var(--dl-space-space-twounits);
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media(max-width: 767px) {
+  .slider-slider {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-threeunits);
+  }
+  .slider-heading {
+    font-size: 40px;
+  }
+  .slider-caption {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .slider-text3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .slider-caption1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media(max-width: 479px) {
+  .slider-slider {
+    height: 593px;
+  }
+  .slider-heading {
+    color: var(--dl-color-gray-500);
+    height: 169px;
+    font-size: 36px;
+    font-style: normal;
+    font-family: Pixel NES;
+    font-weight: 400;
+    line-height: 42px;
+  }
+  .slider-text {
+    color: #f5ff29;
+  }
+  .slider-text2 {
+    color: #ffd949;
+  }
+  .slider-caption {
+    color: rgb(189, 189, 189);
+  }
+  .slider-text3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
