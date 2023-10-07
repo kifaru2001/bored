@@ -92,11 +92,10 @@ const NAVI = (props) => {
               </div>
             </div>
             <nav className="navi-links1">
-              <span className="navi-text06">SEASON II</span>
-              <span className="navi-text07">WHALESDAO</span>
+              <span className="navi-text06">STAKE</span>
+              <span className="navi-text07">DAO</span>
               <span className="navi-text08">ORDINALS</span>
               <span className="navi-text09">MARKETPLACE</span>
-              <span className="navi-text10">CHATROOM</span>
               <span className="navi-text11">P2E GAME</span>
               <ConnectWallet
                 style={{
