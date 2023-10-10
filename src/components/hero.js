@@ -24,12 +24,12 @@ const Hero = (props) => {
             <div className="hero-container">
               <div className="hero-container1">
                 <h1 className="hero-heading">
-                  <MotionAnimate animation="scrollPosition" xPos={[1200, -400]}>
+                  <MotionAnimate animation="scrollPosition" xPos={[1000, -300]}>
                     <span className="hero-text">Bored Whales Yacht Club</span>
                   </MotionAnimate>
                   <br className="hero-text1"></br>
 
-                  <MotionAnimate animation="scrollPosition" xPos={[-1000, 500]}>
+                  <MotionAnimate animation="scrollPosition" xPos={[-800, 500]}>
                     <span className="hero-text2">Season II</span>
                   </MotionAnimate>
                   <br className="hero-text3"></br>
