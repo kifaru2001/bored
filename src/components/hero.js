@@ -50,7 +50,7 @@ const Hero = (props) => {
           </MotionAnimate>
         </div>
 
-        <Link to="/join" className="hero-navlink button">
+        <Link to="/coming-soon" className="hero-navlink button">
           <span className="hero-text4">
             {" "}
             <MotionAnimate

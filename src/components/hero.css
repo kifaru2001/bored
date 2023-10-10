@@ -14,7 +14,6 @@
   filter: opacity(0.25);
   height: 100%;
   position: fixed;
-  margin-top: 77px;
   object-fit: cover;
 }
 .hero-hero-content {
@@ -57,7 +56,6 @@
   width: 1476px;
   height: 62px;
   display: flex;
-  margin-top: var(--dl-space-space-twounits);
   align-items: center;
   padding-left: Unit;
   justify-content: flex-start;

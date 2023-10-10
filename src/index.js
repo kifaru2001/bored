@@ -11,6 +11,7 @@ import "./style.css";
 import Home from "./views/home";
 import Join from "./views/join";
 import NotFound from "./views/not-found";
+import ComingSoon from "./views/coming-soon";
 import reportWebVitals from "./reportWebVitals";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { CoreBlockchain } from "@thirdweb-dev/chains";
@@ -33,6 +34,7 @@ const App = () => {
           <Switch>
             <Route component={Home} exact path="/" />
             <Route component={Join} exact path="/join" />
+            <Route component={ComingSoon} exact path="/coming-soon" />
             <Route component={NotFound} path="**" />
             <Redirect to="**" />
           </Switch>
