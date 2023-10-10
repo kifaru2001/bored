@@ -73,12 +73,14 @@
   font-family: "Pixel NES";
   font-weight: 500;
   padding-left: var(--dl-space-space-twounits);
+  margin-top: -10%;
 }
 .hero-heading:hover {
   animation: inherit;
 }
 .hero-text {
   color: #ffffff;
+  margin-top: -10%;
 }
 .hero-text2 {
   color: #de6b00;
@@ -295,6 +297,7 @@
     padding-left: 0px;
     padding-right: 0px;
     background-color: #000000;
+    margin-top: -10%;
   }
   .hero-video {
     width: 100%;
@@ -350,12 +353,14 @@
   }
   .hero-text {
     color: #e8e8e8;
+    margin-top: -10%;
   }
   .hero-text1 {
     color: #e8e8e8;
   }
   .hero-text2 {
-    color: #ff7302;
+    color: #ffaf25;
+    margin-top: -20%;
   }
   .hero-text3 {
     color: #ffffff;

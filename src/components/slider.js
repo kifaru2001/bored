@@ -11,9 +11,9 @@ const Slider = (props) => {
       <div className="slider-header">
         <h2 className="slider-heading">
           <MotionAnimate animation="scrollPosition" xPos={[1400, -600]}>
-            <h3 className="slider-text">WHALES SEASON II</h3>
+            <h4 className="slider-text">WHALES SEASON II</h4>
           </MotionAnimate>
-          <MotionAnimate animation="scrollPosition" xPos={[-1400, 900]}>
+          <MotionAnimate animation="scrollPosition" xPos={[-700, 500]}>
             <span>
               {" "}
               IS NEXT LEVEL
@@ -24,12 +24,7 @@ const Slider = (props) => {
               />
             </span>
           </MotionAnimate>
-          <MotionAnimate
-            animation="scrollPosition"
-            scrollPositions={[0.4, 0.8]}
-            xPos={[200, -5]}
-            yPos={[100, -5]}
-          >
+          <MotionAnimate animation="scrollPosition" xPos={[1000, -600]}>
             <span className="slider-text2">GENIUS</span>
           </MotionAnimate>
         </h2>

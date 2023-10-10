@@ -20,7 +20,7 @@
 .slider-heading {
   color: var(--dl-color-gray-500);
   font-size: 55px;
-  max-width: 900px;
+  max-width: 1200px;
   font-style: normal;
   font-family: "Pixel NES";
   font-weight: 400;
@@ -28,9 +28,11 @@
 }
 .slider-text {
   color: #fff945;
+  width: 100%;
 }
 .slider-text2 {
   color: #ffdd46;
+  width: 100%;
 }
 .slider-selector {
   width: 100%;
@@ -53,7 +55,7 @@
   font-family: "Pixel NES";
   line-height: 36px;
 }
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .slider-heading {
     font-size: 55px;
     font-style: normal;
@@ -67,7 +69,7 @@
     justify-content: flex-start;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .slider-slider {
     padding-top: var(--dl-space-space-threeunits);
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -90,9 +92,10 @@
     line-height: 24px;
   }
 }
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .slider-slider {
     height: 593px;
+    width: 100%;
   }
   .slider-heading {
     color: var(--dl-color-gray-500);
@@ -102,12 +105,15 @@
     font-family: Pixel NES;
     font-weight: 400;
     line-height: 42px;
+    width: 100%;
   }
   .slider-text {
     color: #f5ff29;
+    width: 100%;
   }
   .slider-text2 {
     color: #ffd949;
+    width: 100%;
   }
   .slider-caption {
     color: rgb(189, 189, 189);

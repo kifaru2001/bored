@@ -24,21 +24,20 @@ const Hero = (props) => {
             <div className="hero-container">
               <div className="hero-container1">
                 <h1 className="hero-heading">
-                  <MotionAnimate
-                    delay={0.4}
-                    speed={2}
-                    ease={[0.75, 0.45, 0.53, 0.94]}
-                    reset={true}
-                  >
+                  <MotionAnimate animation="scrollPosition" xPos={[1200, -400]}>
                     <span className="hero-text">Bored Whales Yacht Club</span>
-                    <br className="hero-text1"></br>
-                    <span className="hero-text2">Season II</span>
-                    <br className="hero-text3"></br>
                   </MotionAnimate>
+                  <br className="hero-text1"></br>
+
+                  <MotionAnimate animation="scrollPosition" xPos={[-1000, 500]}>
+                    <span className="hero-text2">Season II</span>
+                  </MotionAnimate>
+                  <br className="hero-text3"></br>
                 </h1>
               </div>
             </div>
           </div>
+          <hr />
           <MotionAnimate animation="scrollOpacity">
             <p className="hero-caption">
               10000 Provably rare PFPS BORN ON CORE CHAIN AS UNIQUE AS ITS
