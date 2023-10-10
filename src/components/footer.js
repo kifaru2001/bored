@@ -56,12 +56,14 @@ const Footer = (props) => {
                 <Link to="/" className="footer-navlink03">
                   {props.text8}
                 </Link>
+
                 <a
                   href="https://chatroom.boredwhalesyachtclub.org"
                   className="footer-text1"
                 >
                   {props.text10}
                 </a>
+                <hr />
                 <a
                   href="https://discord.com/invite/E2XhP33u3f"
                   className="footer-text1"
