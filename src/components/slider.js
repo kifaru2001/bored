@@ -24,10 +24,11 @@ const Slider = (props) => {
               />
             </span>
           </MotionAnimate>
-          <MotionAnimate animation="scrollPosition" xPos={[1000, -600]}>
+          <MotionAnimate animation="scrollPosition" xPos={[350, -400]}>
             <span className="slider-text2">GENIUS</span>
           </MotionAnimate>
         </h2>
+        <hr />
       </div>
       <div className="slider-selector">
         <p className="slider-caption">
