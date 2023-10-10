@@ -44,8 +44,7 @@ const Slider = (props) => {
         <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.2, 0.9]}>
           <p className="slider-caption1">
             SEASON II IS PRICELESS, EVERY PIECE A STATE OF THE ART BUILT WITH AI
-            AND GODLIKE CREATIVITY. AS THE NFTS EVOLVE THEY CROSS CHAINS AND
-            HAVE NEW BADGES FOR CHAINS THEY ARE ON.
+            AND GODLIKE CREATIVITY.
           </p>
         </MotionAnimate>
       </div>
