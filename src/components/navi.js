@@ -39,11 +39,36 @@ const NAVI = (props) => {
             >
               STAKE
             </a>
-            <a href="https://whaleverse.boredwhalesyachtclub.org" className="navi-text01">DAO</span>
-            <a href="https://ordinals.boredwhalesyachtclub.org" className="navi-text02">SATS</span>
-            <a href="https://arcade.boredwhalesyachtclub.org" className="navi-text03">ARCADE</span>
-            <a href="https://marketplace.boredwhalesyachtclub.org" className="navi-text04">MARKETPLACE</span>
-            <a href="https://chatroom.boredwhalesyachtclub.org" className="navi-text05">CHATROOM</span>
+            <a
+              href="https://whaleverse.boredwhalesyachtclub.org"
+              className="navi-text01"
+            >
+              DAO
+            </a>
+            <a
+              href="https://ordinals.boredwhalesyachtclub.org"
+              className="navi-text02"
+            >
+              SATS
+            </a>
+            <a
+              href="https://arcade.boredwhalesyachtclub.org"
+              className="navi-text03"
+            >
+              ARCADE
+            </a>
+            <a
+              href="https://marketplace.boredwhalesyachtclub.org"
+              className="navi-text04"
+            >
+              MARKETPLACE
+            </a>
+            <a
+              href="https://chatroom.boredwhalesyachtclub.org"
+              className="navi-text05"
+            >
+              CHATROOM
+            </a>
           </nav>
           <ConnectWallet
             style={{
@@ -98,11 +123,31 @@ const NAVI = (props) => {
               </div>
             </div>
             <nav className="navi-links1">
-            <a href="https://stake.boredwhalesyachtclub.org" className="navi-text01">STAKE</a>
-              <a href="https://whaleverse.boredwhalesyachtclub.org" className="navi-text01">DAO</a>
-              <a href="https://ordinals.boredwhalesyachtclub.org" className="navi-text01">ORDINALS</a>
-              <a href="https://marketplace.boredwhalesyachtclub.org" className="navi-text01">MARKETPLACE</a>
-              <a href="https://whaleverse.boredwhalesyachtclub.org" className="navi-text01">ARCADE</a>
+              <a
+                href="https://stake.boredwhalesyachtclub.org"
+                className="navi-text01"
+              >
+                STAKE
+              </a>
+              <a
+                href="https://whaleverse.boredwhalesyachtclub.org"
+                className="navi-text01"
+              >
+                DAO
+              </a>
+              <a
+                href="https://ordinals.boredwhalesyachtclub.org"
+                className="navi-text01"
+              >
+                ORDINALS
+              </a>
+              <a
+                href="https://marketplace.boredwhalesyachtclub.org"
+                className="navi-text01"
+              >
+                MARKETPLACE
+              </a>
+              <span className="navi-text11">P2E GAME</span>
               <ConnectWallet
                 style={{
                   background: "black",
