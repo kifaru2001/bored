@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import './footer.css'
+import "./footer.css";
 
 const Footer = (props) => {
   return (
@@ -22,37 +22,68 @@ const Footer = (props) => {
             <div className="footer-column">
               <span className="footer-header">{props.Header}</span>
               <div className="footer-list">
-                <Link to="/" className="footer-navlink">
+                <a
+                  href="https://gallery.boredwhalesyachtclub.org"
+                  className="footer-text1"
+                >
                   {props.text3}
-                </Link>
+                </a>
                 <Link to="/" className="footer-navlink01">
-                  <span className="footer-text1">DOCUMENTATION</span>
+                  <a
+                    href="https://docs.boredwhalesyachtclub.org"
+                    className="footer-text1"
+                  >
+                    DOCUMENTATION
+                  </a>
                   <br className=""></br>
                 </Link>
-                <Link to="/" className="footer-navlink02">
+                <a
+                  href="https://docs.boredwhalesyachtclub.org"
+                  className="footer-text1"
+                >
                   {props.text2}
-                </Link>
+                </a>
               </div>
             </div>
             <div className="footer-column1">
-              <span className="footer-header1">{props.Header1}</span>
+              <a
+                href="https://marketplace.boredwhalesyachtclub.org"
+                className="footer-text1"
+              >
+                {props.Header1}
+              </a>
               <div className="footer-list1">
                 <Link to="/" className="footer-navlink03">
                   {props.text8}
                 </Link>
-                <Link to="/" className="footer-navlink04">
+                <a
+                  href="https://chatroom.boredwhalesyachtclub.org"
+                  className="footer-text1"
+                >
                   {props.text10}
-                </Link>
-                <Link to="/" className="footer-navlink05">
+                </a>
+                <a
+                  href="https://discord.com/invite/E2XhP33u3f"
+                  className="footer-text1"
+                >
                   {props.text4}
-                </Link>
-                <Link to="/" className="footer-navlink06">
+                </a>
+                <Link
+                  to="https://twitter.com/bwycdinals"
+                  className="footer-navlink06"
+                >
                   {props.text5}
                 </Link>
-                <Link to="/" className="footer-navlink07">
+                <Link
+                  to="https://stake.boredwhalesyachtclub.org"
+                  className="footer-navlink07"
+                >
                   {props.text6}
                 </Link>
-                <Link to="/" className="footer-navlink08">
+                <Link
+                  to="https://ordinals.boredwhalesyachtclub.org"
+                  className="footer-navlink08"
+                >
                   {props.text7}
                 </Link>
                 <Link to="/" className="footer-navlink09">
@@ -67,27 +98,27 @@ const Footer = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Footer.defaultProps = {
-  text6: 'TWITTER',
-  text9: 'ORDINALS',
-  text2: 'WHITEPAPER V1',
-  text8: 'MARKETPLACE',
-  text: '© 2023 BWYC - All rights reserved',
-  text1: 'BORED WHALES YACHT CLUB. evm + bitcoin DECENTRALIZED COMMUNITY',
-  image_alt: 'image',
-  text10: 'WHALES TOKEN',
-  text3: 'GALLERY V2',
-  Header1: 'UTILITY',
-  rootClassName: '',
-  text4: 'CHATROOM',
-  Header: 'Company',
-  text7: 'STAKING',
-  text5: 'DISCORD',
-  image_src: '/favicon-800w.png',
-}
+  text6: "TWITTER",
+  text9: "ORDINALS",
+  text2: "WHITEPAPER V1",
+  text8: "MARKETPLACE",
+  text: "© 2023 BWYC - All rights reserved",
+  text1: "BORED WHALES YACHT CLUB. evm + bitcoin DECENTRALIZED COMMUNITY",
+  image_alt: "image",
+  text10: "WHALES TOKEN",
+  text3: "GALLERY V2",
+  Header1: "UTILITY",
+  rootClassName: "",
+  text4: "CHATROOM",
+  Header: "Company",
+  text7: "STAKING",
+  text5: "DISCORD",
+  image_src: "/favicon-800w.png",
+};
 
 Footer.propTypes = {
   text6: PropTypes.string,
@@ -106,6 +137,6 @@ Footer.propTypes = {
   text7: PropTypes.string,
   text5: PropTypes.string,
   image_src: PropTypes.string,
-}
+};
 
-export default Footer
+export default Footer;
