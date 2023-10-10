@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import './create.css'
+import "./create.css";
+import { MotionAnimate } from "react-motion-animate";
 
 const Create = (props) => {
   return (
@@ -8,9 +9,11 @@ const Create = (props) => {
       <div className="create-content">
         <div className="create-header">
           <h2 className="create-heading">
-            <span className="create-text">
-              JOINING 2 DECENTRALIZED WORLDS, WITH AI, NFTS AND EPIC GAMING
-            </span>
+            <MotionAnimate animation="fadeInUp" reset={true}>
+              <span className="create-text">
+                JOINING 2 DECENTRALIZED WORLDS, WITH AI, NFTS AND EPIC GAMING
+              </span>
+            </MotionAnimate>
             <br></br>
           </h2>
         </div>
@@ -22,7 +25,7 @@ const Create = (props) => {
         </button>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Create
+export default Create;

@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
+import { MotionAnimate } from "react-motion-animate";
 
-import './statistics.css'
+import "./statistics.css";
 
 const Statistics = (props) => {
   return (
@@ -14,7 +15,23 @@ const Statistics = (props) => {
       />
       <div className="statistics-content">
         <div className="statistics-stat">
-          <h3 className="statistics-header">{props.Header1}</h3>
+          <MotionAnimate
+            variant={{
+              hidden: { opacity: 0.2, rotate: -180 },
+              show: {
+                opacity: 0.8,
+                rotate: 0,
+                transition: {
+                  repeat: Infinity,
+                  duration: 4,
+                  repeatDelay: 1,
+                  type: "spring",
+                },
+              },
+            }}
+          >
+            <h3 className="statistics-header">{props.Header1}</h3>
+          </MotionAnimate>
           <span className="statistics-text">{props.text}</span>
         </div>
       </div>
@@ -23,21 +40,21 @@ const Statistics = (props) => {
       </svg>
       <span className="statistics-text1">{props.text1}</span>
     </section>
-  )
-}
+  );
+};
 
 Statistics.defaultProps = {
-  image_alt: 'image',
-  Header1: '$WHLS AIRDROP',
-  text: 'WHLS PROTOCOL IS THE GOVERNANCE TOKEN OF THE COMMUNITY! MEMBERS CAN DELEGATE IT AND MAKE PROPOSALS ON BWYC DAO! AND BUY SII NFT. ELIGIBLE MEMBERS CAN CLAIM AIRDROP ONCE WHITELISTED. TO GET WHITELIST! PLEASE HOLD AT LEAST 100 $WHLS OR SI NFT. THE PROTOCOL IS AIMED  TO MAKING BWYC MORE DECENTRALIZED. $WHLS WILL BE LISTED ON DEX EARLY 2024 WITH SO MANY UTILITIES AWATING.',
-  text1: 'PROTOCAL DOCUMENTATION',
-}
+  image_alt: "image",
+  Header1: "$WHLS AIRDROP",
+  text: "WHLS PROTOCOL IS THE GOVERNANCE TOKEN OF THE COMMUNITY! MEMBERS CAN DELEGATE IT AND MAKE PROPOSALS ON BWYC DAO! AND BUY SII NFT. ELIGIBLE MEMBERS CAN CLAIM AIRDROP ONCE WHITELISTED. TO GET WHITELIST! PLEASE HOLD AT LEAST 100 $WHLS OR SI NFT. THE PROTOCOL IS AIMED  TO MAKING BWYC MORE DECENTRALIZED. $WHLS WILL BE LISTED ON DEX EARLY 2024 WITH SO MANY UTILITIES AWATING.",
+  text1: "PROTOCAL DOCUMENTATION",
+};
 
 Statistics.propTypes = {
   image_alt: PropTypes.string,
   Header1: PropTypes.string,
   text: PropTypes.string,
   text1: PropTypes.string,
-}
+};
 
-export default Statistics
+export default Statistics;
