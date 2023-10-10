@@ -129,25 +129,35 @@ const NAVI = (props) => {
               >
                 STAKE
               </a>
+              <hr />
               <a
                 href="https://whaleverse.boredwhalesyachtclub.org"
                 className="navi-text01"
               >
                 DAO
               </a>
+              <hr />
               <a
                 href="https://ordinals.boredwhalesyachtclub.org"
                 className="navi-text01"
               >
                 ORDINALS
               </a>
+              <hr />
               <a
                 href="https://marketplace.boredwhalesyachtclub.org"
                 className="navi-text01"
               >
                 MARKETPLACE
               </a>
-              <span className="navi-text11">P2E GAME</span>
+              <hr />
+              <a
+                href="https://marketplace.boredwhalesyachtclub.org"
+                className="navi-text01"
+              >
+                P2E GAME
+              </a>
+              <hr />
               <ConnectWallet
                 style={{
                   background: "black",
