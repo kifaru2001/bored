@@ -40,13 +40,12 @@ const Hero = (props) => {
           <hr />
           <MotionAnimate animation="scrollOpacity">
             <p className="hero-caption">
-              10000 Provably rare PFPS BORN ON CORE CHAIN AS UNIQUE AS ITS
-              OWNER! ITS ORIGINAL STATE IS NOTS ITS FINAL STATE. SEASON II IS
+              10000 Provably rare PFPS BORN ON CORE BLOCKCHAIN. SEASON II IS
               GOING TO EVOLVE INTO WILD THINGS WE AN NOT YET PREDICT. IT&apos;S
               UPON THE HOLDER TO DECIDE, DO YOU WANT TO TAKE YOUR WHALE ON A
               BUMPY RIDE AND BATTLE THE WAVES, OR DO YOU JUST WANT TO LET IT
-              CHILL ITS COMFY BLOCK AND EARN WHLS REWADS. IRREGADLESS, YOU CAN
-              SWIM FREE, IT&apos;S A BIG PERMISSIONLESS WORLD JUST FOR US
+              CHILL IN ITS COMFY BLOCK AND EARN WHLS REWADS. IRREGADLESS, YOU
+              CAN SWIM FREE, IT&apos;S A BIG PERMISSIONLESS OCEAN JUST FOR US
             </p>
           </MotionAnimate>
         </div>
