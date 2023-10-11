@@ -19,7 +19,7 @@ const Create = (props) => {
         </div>
         <button className="create-button button">
           <span className="create-text2">
-            <span>BECOME A PIONEEER</span>
+            <span>BECOME A WHALE</span>
             <br></br>
           </span>
         </button>

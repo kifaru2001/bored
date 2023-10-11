@@ -51,7 +51,7 @@ const Slider = (props) => {
             }}
           >
             <MotionAnimate animation="scrollPosition" xPos={[550, -400]}>
-              <span className="slider-text2">CAN SOLVE</span>
+              <span className="slider-text2">CAN CRACK</span>
             </MotionAnimate>
           </div>
         </h2>

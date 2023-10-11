@@ -27,11 +27,11 @@
   text-gradient: "45deg, $blue600 -20%, $pink600 50%";
 }
 .slider-text {
-  color: #fff945;
+  color: #ffffff;
   width: 100%;
 }
 .slider-text2 {
-  color: #ffdd46;
+  color: #e2e2e2;
   width: 100%;
 }
 .slider-selector {
