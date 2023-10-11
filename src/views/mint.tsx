@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import styles from "./mint.module.css";
+import "./home.css";
 import {
   MediaRenderer,
   Web3Button,
@@ -10,10 +11,14 @@ import {
   useContractMetadata,
   useTotalCirculatingSupply,
   useTotalCount,
+  ConnectWallet,
 } from "@thirdweb-dev/react";
 
 import { ethers } from "ethers";
 import { Input } from "web3uikit";
+import NAVI from "../components/navi";
+import Profile from "../views/profile/[walletAddress].tsx";
+import Footer from "../components/footer";
 
 import { useState } from "react";
 
@@ -57,90 +62,124 @@ const Mint: NextPage = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        {!isContractMetadataLoading && (
-          <div className={styles.heroSection}>
-            <div className={styles.collectionImage}>
-              <MediaRenderer src={contractMetadata.image} />
-            </div>
-            <div>
-              <h1>{contractMetadata.name}</h1>
-              <p>{contractMetadata.description}</p>
-              {!isActiveClaimPhaseLoading ? (
+    <>
+      <div style={{ marginBottom: "10%" }}>
+        {" "}
+        <NAVI />
+        <hr />
+        <hr />
+        <div className={styles.container}>
+          <main className={styles.main}>
+            {!isContractMetadataLoading && (
+              <div className={styles.heroSection}>
                 <div>
-                  <p>Claim Phase: {activeClaimPhase?.metadata?.name}</p>
-                  <p>
-                    Price: {ethers.utils.formatUnits(activeClaimPhase?.price!)}
+                  <h4 style={{ textAlign: "center" }}>
+                    {contractMetadata.name}
+                  </h4>
+                  <hr />
+                  <p style={{ fontStyle: "italic" }}>
+                    {contractMetadata.description}
                   </p>
-                </div>
-              ) : (
-                <p>Loading...</p>
-              )}
-              {!isTotalSupplyLoading && !isTotalClaimSupplyLoading ? (
-                <p>
-                  Claimed: {totalClaimSupply?.toNumber()} /{" "}
-                  {totalSupply?.toNumber()}
-                </p>
-              ) : (
-                <p>Loading...</p>
-              )}
-              {address ? (
-                !isClaimIneligibilityReasonsLoading ? (
-                  claimIneligibilityReasons?.length! > 0 ? (
-                    claimIneligibilityReasons?.map((reason, index) => (
-                      <p key={index}>{reason}</p>
-                    ))
-                  ) : (
+                  <hr />
+                  {!isActiveClaimPhaseLoading ? (
                     <div>
-                      <p>Eligible to claim</p>
-                      <div className={styles.claimContainer}>
-                        <div className={styles.claimValue}>
-                          <button
-                            className={styles.claimBtn}
-                            onClick={decrement}
-                          >
-                            -
-                          </button>
-                          <input
-                            className={styles.claimInput}
-                            type="number"
-                            value={claimQuantity}
-                            placeHolder="1"
-                          />
-                          <button
-                            className={styles.claimBtn}
-                            onClick={increment}
-                          >
-                            +
-                          </button>
-                        </div>
-                        <Web3Button
-                          contractAddress={
-                            "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E"
-                          }
-                          action={(contract) =>
-                            contract.erc721.claim(claimQuantity)
-                          }
-                          onSuccess={() => `/profile/${address}`}
-                        >
-                          Claim NFT
-                        </Web3Button>
-                      </div>
+                      <p>
+                        PHASE:
+                        <p style={{ color: "orange", fontSize: "20px" }}>
+                          {activeClaimPhase?.metadata?.name}
+                        </p>
+                      </p>
+                      <hr />
+                      <p>
+                        Price:{" "}
+                        <p style={{ color: "orange", fontSize: "20px" }}>
+                          {ethers.utils.formatUnits(activeClaimPhase?.price!)}{" "}
+                          CORE
+                        </p>
+                      </p>
+                      <hr />
                     </div>
-                  )
-                ) : (
-                  <p>Checking Eligibility...</p>
-                )
-              ) : (
-                <p>Connect Wallet to claim</p>
-              )}
-              <div></div>
-            </div>
-          </div>
-        )}
-      </main>
-    </div>
+                  ) : (
+                    <p>Loading...</p>
+                  )}
+                  {!isTotalSupplyLoading && !isTotalClaimSupplyLoading ? (
+                    <p>
+                      Claimed: <hr />
+                      <p style={{ color: "orange", fontSize: "20px" }}>
+                        {totalClaimSupply?.toNumber()} /{" "}
+                        {totalSupply?.toNumber()}
+                      </p>
+                      <hr />
+                    </p>
+                  ) : (
+                    <p>Loading...</p>
+                  )}
+                  {address ? (
+                    !isClaimIneligibilityReasonsLoading ? (
+                      claimIneligibilityReasons?.length! > 0 ? (
+                        claimIneligibilityReasons?.map((reason, index) => (
+                          <p style={{ margin: "10px" }} key={index}>
+                            {reason}
+                          </p>
+                        ))
+                      ) : (
+                        <div>
+                          <hr />
+                          <p style={{ color: "gray" }}>Eligible to claim</p>
+                          <hr stlye={{ color: "white" }} />
+                          <div className={styles.claimContainer}>
+                            <div className={styles.claimValue}>
+                              <button
+                                className={styles.claimBtn}
+                                onClick={decrement}
+                              >
+                                -
+                              </button>
+                              <input
+                                className={styles.claimInput}
+                                type="number"
+                                value={claimQuantity}
+                                placeHolder="1"
+                              />
+                              <button
+                                className={styles.claimBtn}
+                                onClick={increment}
+                              >
+                                +
+                              </button>
+                            </div>
+                            <hr />
+                            <Web3Button
+                              style={{ color: "orange", background: "black" }}
+                              contractAddress={
+                                "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E"
+                              }
+                              action={(contract) =>
+                                contract.erc721.claim(claimQuantity)
+                              }
+                              onSuccess={() => `/profile/${address}`}
+                            >
+                              MINT SEAON II
+                            </Web3Button>
+                          </div>
+                        </div>
+                      )
+                    ) : (
+                      <p>Checking Eligibility...</p>
+                    )
+                  ) : (
+                    <p>Connect wallet</p>
+                  )}
+                  <div></div>
+                </div>
+              </div>
+            )}
+            <hr />
+            <Profile />
+          </main>
+        </div>
+      </div>
+    </>
   );
 };
 

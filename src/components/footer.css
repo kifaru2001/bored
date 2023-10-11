@@ -7,6 +7,7 @@
   padding-left: var(--dl-space-space-fiveunits);
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
+  align-items: center;
 }
 .footer-content {
   gap: var(--dl-space-space-fiveunits);
@@ -77,7 +78,7 @@
   text-decoration: none;
 }
 .footer-navlink:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-navlink01 {
   cursor: pointer;
@@ -87,10 +88,10 @@
   text-decoration: none;
 }
 .footer-navlink01:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-text1 {
-  font-family: """""Pixel NES""""";
+  font-family: "" "" "Pixel NES" "" "";
 }
 .footer-navlink02 {
   cursor: pointer;
@@ -101,7 +102,7 @@
   text-decoration: none;
 }
 .footer-navlink02:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-column1 {
   gap: var(--dl-space-space-threeunits);
@@ -130,7 +131,7 @@
   text-decoration: none;
 }
 .footer-navlink03:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-navlink04 {
   cursor: pointer;
@@ -141,7 +142,7 @@
   text-decoration: none;
 }
 .footer-navlink04:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-navlink05 {
   cursor: pointer;
@@ -152,7 +153,7 @@
   text-decoration: none;
 }
 .footer-navlink05:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-navlink06 {
   cursor: pointer;
@@ -163,7 +164,7 @@
   text-decoration: none;
 }
 .footer-navlink06:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-navlink07 {
   cursor: pointer;
@@ -174,7 +175,7 @@
   text-decoration: none;
 }
 .footer-navlink07:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-navlink08 {
   cursor: pointer;
@@ -185,7 +186,7 @@
   text-decoration: none;
 }
 .footer-navlink08:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-navlink09 {
   cursor: pointer;
@@ -196,7 +197,7 @@
   text-decoration: none;
 }
 .footer-navlink09:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 .footer-bottom {
   width: 100%;
@@ -212,7 +213,7 @@
   line-height: 21px;
 }
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .footer-footer {
     background-color: #000000;
   }
@@ -227,7 +228,7 @@
     width: 100%;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .footer-footer {
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
@@ -246,7 +247,7 @@
     flex-direction: row;
   }
 }
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .footer-footer {
     width: 478px;
     align-items: center;

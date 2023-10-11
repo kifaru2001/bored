@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import './component.css'
+import "./component.css";
 
 const AppComponent = (props) => {
   return (
@@ -66,31 +66,31 @@ const AppComponent = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 AppComponent.defaultProps = {
-  text: 'BLUE WHALES',
-  button: 'VALIDATE',
-  text1: 'SPERM WHALES',
-  button1: 'VALIDATE',
-  text2: 'FIN WHALES',
-  text3: 'NFTS ',
-  text4: '✔ 100% DELEGATION POWER',
-  text5: '✔ @BLU DISCORD ROLE',
-  text6: '✔ 100% REWARDS',
-  text7: '✔ MULTI-WRAP TOKENS',
-  text8: 'NFTS ',
-  text9: '✔ 50% delegation power',
-  text10: '✔ @SPERMWHALE DISCORD ROLE',
-  text11: '✔ 75% REWARDS',
-  text12: '✔ MULTI-WRAP TOKESN',
-  text13: 'NFTS ',
-  text14: '5+',
-  text15: '✔ 10% DELEGATION POWER',
-  text16: '✔ @BOREDWHale role',
-  text17: '✔ 50% rewards',
-}
+  text: "BLUE WHALES",
+  button: "VALIDATE",
+  text1: "SPERM WHALES",
+  button1: "VALIDATE",
+  text2: "FIN WHALES",
+  text3: "NFTS ",
+  text4: "✔ 100% DELEGATION POWER",
+  text5: "✔ @BLUE_WHALE DISCORD ROLE",
+  text6: "✔ 100% REWARDS",
+  text7: "✔ P2E CHARACTER",
+  text8: "NFTS ",
+  text9: "✔ 50% delegation power",
+  text10: "✔ @SPERMWHALE DISCORD ROLE",
+  text11: "✔ 75% REWARDS",
+  text12: "✔ P2E CHARACTER",
+  text13: "NFTS ",
+  text14: "5+",
+  text15: "✔ 10% DELEGATION POWER",
+  text16: "✔ @BOREDWHale role",
+  text17: "✔ 50% rewards",
+};
 
 AppComponent.propTypes = {
   text: PropTypes.string,
@@ -113,6 +113,6 @@ AppComponent.propTypes = {
   text15: PropTypes.string,
   text16: PropTypes.string,
   text17: PropTypes.string,
-}
+};
 
-export default AppComponent
+export default AppComponent;
