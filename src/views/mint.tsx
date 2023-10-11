@@ -152,7 +152,7 @@ const Mint: NextPage = () => {
                                 placeHolder="Amount"
                               />
                               <button
-                                className={styles.claimBtn}
+                                className={styles.claimBtn1}
                                 onClick={increment}
                               >
                                 +
