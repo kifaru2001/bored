@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import styles from "./mint.module.css";
-import "./styles.css";
 import {
   MediaRenderer,
   Web3Button,
