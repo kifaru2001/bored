@@ -13,12 +13,13 @@ import {
 } from "@thirdweb-dev/react";
 
 import { ethers } from "ethers";
+import { Input } from "web3uikit";
 
 import { useState } from "react";
 
 const Mint: NextPage = () => {
   const address = useAddress();
-  const maxClaimQuantity = 2;
+  const maxClaimQuantity = 100;
 
   const { contract } = useContract(
     "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E",
@@ -105,6 +106,7 @@ const Mint: NextPage = () => {
                             className={styles.claimInput}
                             type="number"
                             value={claimQuantity}
+                            placeHolder="1"
                           />
                           <button
                             className={styles.claimBtn}
@@ -120,7 +122,7 @@ const Mint: NextPage = () => {
                           action={(contract) =>
                             contract.erc721.claim(claimQuantity)
                           }
-                          onSuccess={() => router.push(`/profile/${address}`)}
+                          onSuccess={() => `/profile/${address}`}
                         >
                           Claim NFT
                         </Web3Button>

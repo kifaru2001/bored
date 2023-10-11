@@ -4,8 +4,8 @@ import {
   useContract,
   useOwnedNFTs,
 } from "@thirdweb-dev/react";
-import styles from "../../styles/Home.module.css";
-import { CONTRACT_ADDRESS } from "../../const/addresses";
+import styles from "../mint.module.css";
+import { CONTRACT_ADDRESS } from "./nft.tsx";
 
 export default function Profile() {
   const address = useAddress();

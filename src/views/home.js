@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import Script from 'dangerous-html/react'
-import { Helmet } from 'react-helmet'
+import Script from "dangerous-html/react";
+import { Helmet } from "react-helmet";
 
-import Note from '../components/note'
-import Hero from '../components/hero'
-import Statistics from '../components/statistics'
-import Slider from '../components/slider'
-import Objectives from '../components/objectives'
-import Growth from '../components/growth'
-import Experience from '../components/experience'
-import Create from '../components/create'
-import Footer from '../components/footer'
-import NAVI from '../components/navi'
-import './home.css'
+import Note from "../components/note";
+import Hero from "../components/hero";
+import Statistics from "../components/statistics";
+import Slider from "../components/slider";
+import Objectives from "../components/objectives";
+import Growth from "../components/growth";
+import Experience from "../components/experience";
+import Create from "../components/create";
+import Footer from "../components/footer";
+import NAVI from "../components/navi";
+import "./home.css";
 
 const Home = (props) => {
   return (
@@ -32,7 +32,7 @@ const Home = (props) => {
       </Helmet>
       <Note></Note>
       <Hero rootClassName="hero-root-class-name"></Hero>
-      <Statistics></Statistics>
+
       <Slider></Slider>
       <Objectives></Objectives>
       <Growth></Growth>
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
       </div>
       <NAVI rootClassName="navi-root-class-name"></NAVI>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
