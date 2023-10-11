@@ -104,14 +104,14 @@ const NAVI = (props) => {
         </div>
         <MotionAnimate
           variant={{
-            hidden: { opacity: 0.2, rotate: -180 },
+            hidden: { opacity: 0.2, rotate: 6060 },
             show: {
               opacity: 0.8,
               rotate: 0,
               transition: {
                 repeat: Infinity,
-                duration: 3,
-                repeatDelay: 1,
+                duration: 5,
+                repeatDelay: 5,
                 type: "spring",
               },
             },

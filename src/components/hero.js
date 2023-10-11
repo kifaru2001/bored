@@ -34,7 +34,7 @@ const Hero = (props) => {
                   >
                     <MotionAnimate
                       animation="scrollPosition"
-                      xPos={[300, -960]}
+                      xPos={[300, -760]}
                     >
                       <span className="hero-text">
                         Bored Whales Yacht Club{" "}
