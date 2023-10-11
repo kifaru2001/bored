@@ -30,7 +30,6 @@ export default function Profile() {
           display: "flex",
           marginBottom: "20px",
           position: "static",
-          marginTop: "10%",
         }}
       >
         {address ? (

@@ -65,7 +65,7 @@ const Mint: NextPage = () => {
     <>
       <div style={{ marginBottom: "10%" }}>
         {" "}
-        <NAVI />
+        <NAVI rootClassName="navi-root-class-name"></NAVI>
         <hr />
         <hr />
         <div className={styles.container}>
@@ -139,7 +139,7 @@ const Mint: NextPage = () => {
                                 className={styles.claimInput}
                                 type="number"
                                 value={claimQuantity}
-                                placeHolder="1"
+                                placeHolder="Amount"
                               />
                               <button
                                 className={styles.claimBtn}
