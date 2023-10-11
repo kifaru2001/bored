@@ -33,7 +33,7 @@ const Slider = (props) => {
             <MotionAnimate animation="scrollPosition" xPos={[-200, 500]}>
               <span>
                 {" "}
-                BECAUSE WHALES BELONG WITH THE OCEAN
+                WHALES BELONG WITH THE OCEAN
                 <span
                   dangerouslySetInnerHTML={{
                     __html: " ",

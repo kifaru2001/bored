@@ -10,6 +10,7 @@ import {
 import "./style.css";
 import Home from "./views/home";
 import Join from "./views/join";
+import Stake from "./views/stake.tsx";
 import Profile from "./views/profile/[walletAddress].tsx";
 import Mint from "./views/mint.tsx";
 import NotFound from "./views/not-found";
@@ -37,6 +38,7 @@ const App = () => {
             <Route component={Home} exact path="/" />
             <Route component={Join} exact path="/join" />
             <Route component={Mint} exact path="/mint" />
+            <Route component={Stake} exact path="/stake" />
             <Route component={Profile} exact path="/profile" />
             <Route component={ComingSoon} exact path="/coming-soon" />
             <Route component={NotFound} path="**" />

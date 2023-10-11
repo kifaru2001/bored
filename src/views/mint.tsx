@@ -66,7 +66,6 @@ const Mint: NextPage = () => {
   return (
     <>
       <div style={{ marginBottom: "10%" }}>
-        {" "}
         <NAVI rootClassName="navi-root-class-name"></NAVI>
         <hr />
         <hr />
