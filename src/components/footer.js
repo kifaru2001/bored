@@ -23,22 +23,22 @@ const Footer = (props) => {
               <span className="footer-header">{props.Header}</span>
               <div className="footer-list">
                 <a
-                  href="https://gallery.boredwhalesyachtclub.org"
+                  href="https://twitter.com/bwycdinals"
                   className="footer-text1"
                 >
                   {props.text3}
                 </a>
-                <Link to="/" className="footer-navlink01">
-                  <a
-                    href="https://docs.boredwhalesyachtclub.org"
-                    className="footer-text1"
-                  >
-                    DOCUMENTATION
-                  </a>
-                  <br className=""></br>
-                </Link>
+                <hr />
                 <a
-                  href="https://docs.boredwhalesyachtclub.org"
+                  href="https://discord.com/invite/E2XhP33u3f"
+                  className="footer-text1"
+                >
+                  DISCORD
+                </a>
+                <br className=""></br>
+
+                <a
+                  href="https://marketplace.boredwhalesyachtclub.org"
                   className="footer-text1"
                 >
                   {props.text2}
@@ -46,52 +46,7 @@ const Footer = (props) => {
               </div>
             </div>
             <div className="footer-column1">
-              <a
-                href="https://marketplace.boredwhalesyachtclub.org"
-                className="footer-text1"
-              >
-                {props.Header1}
-              </a>
-              <div className="footer-list1">
-                <Link to="/" className="footer-navlink03">
-                  {props.text8}
-                </Link>
-
-                <a
-                  href="https://chatroom.boredwhalesyachtclub.org"
-                  className="footer-text1"
-                >
-                  {props.text10}
-                </a>
-                <hr />
-                <a
-                  href="https://discord.com/invite/E2XhP33u3f"
-                  className="footer-text1"
-                >
-                  {props.text4}
-                </a>
-                <Link
-                  to="https://twitter.com/bwycdinals"
-                  className="footer-navlink06"
-                >
-                  {props.text5}
-                </Link>
-                <Link
-                  to="https://stake.boredwhalesyachtclub.org"
-                  className="footer-navlink07"
-                >
-                  {props.text6}
-                </Link>
-                <Link
-                  to="https://ordinals.boredwhalesyachtclub.org"
-                  className="footer-navlink08"
-                >
-                  {props.text7}
-                </Link>
-                <Link to="/" className="footer-navlink09">
-                  {props.text9}
-                </Link>
-              </div>
+              <div className="footer-list1"></div>
             </div>
           </div>
         </div>
@@ -106,13 +61,13 @@ const Footer = (props) => {
 Footer.defaultProps = {
   text6: "TWITTER",
   text9: "ORDINALS",
-  text2: "WHITEPAPER V1",
+  text2: "MARKETPLACE",
   text8: "MARKETPLACE",
   text: "© 2023 BWYC - All rights reserved",
   text1: "BORED WHALES YACHT CLUB. evm + bitcoin DECENTRALIZED COMMUNITY",
   image_alt: "image",
   text10: "WHALES TOKEN",
-  text3: "GALLERY V2",
+  text3: "TWITTER",
   Header1: "UTILITY",
   rootClassName: "",
   text4: "CHATROOM",
