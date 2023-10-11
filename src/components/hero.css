@@ -11,7 +11,7 @@
   top: 0px;
   left: 0px;
   width: 1920px;
-  filter: opacity(0.25);
+  filter: opacity(0.05);
   height: 100%;
   position: fixed;
   object-fit: cover;
@@ -61,8 +61,9 @@
   justify-content: flex-start;
 }
 .hero-heading {
-  width: 1277px;
-  height: 149px;
+  width: 100%;
+  margin-left: -8%;
+  height: 250px;
   font-size: 90px;
   max-width: 100%;
   font-style: normal;
@@ -70,14 +71,13 @@
   transition: 0.3s;
   font-family: "Pixel NES";
   font-weight: 500;
-  padding-left: var(--dl-space-space-twounits);
   margin-top: -10%;
 }
 .hero-heading:hover {
   animation: inherit;
 }
 .hero-text {
-  color: #ffffff;
+  color: #ffffff8a;
   margin-top: -10%;
 }
 .hero-text2 {

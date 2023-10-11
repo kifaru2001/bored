@@ -23,17 +23,39 @@ const Hero = (props) => {
           <div className="hero-header">
             <div className="hero-container">
               <div className="hero-container1">
-                <h1 className="hero-heading">
-                  <MotionAnimate animation="scrollPosition" xPos={[1000, -300]}>
-                    <span className="hero-text">Bored Whales Yacht Club</span>
-                  </MotionAnimate>
-                  <br className="hero-text1"></br>
-
-                  <MotionAnimate animation="scrollPosition" xPos={[-800, 500]}>
-                    <span className="hero-text2">Season II</span>
-                  </MotionAnimate>
+                <h2 className="hero-heading">
+                  <div
+                    style={{
+                      background: "#0000008a",
+                      width: "1900px",
+                      marginLeft: "-10%",
+                      padding: "3%",
+                    }}
+                  >
+                    <MotionAnimate
+                      animation="scrollPosition"
+                      xPos={[600, -1060]}
+                    >
+                      <span className="hero-text">Bored Whales Yacht Club</span>
+                    </MotionAnimate>
+                  </div>
+                  <div
+                    style={{
+                      background: "#ffffff8a",
+                      width: "1900px",
+                      marginLeft: "-10%",
+                      padding: "3%",
+                    }}
+                  >
+                    <MotionAnimate
+                      animation="scrollPosition"
+                      xPos={[-1800, -150]}
+                    >
+                      <span className="hero-text2">Season II</span>
+                    </MotionAnimate>
+                  </div>
                   <br className="hero-text3"></br>
-                </h1>
+                </h2>
               </div>
             </div>
           </div>

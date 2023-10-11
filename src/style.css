@@ -41,6 +41,9 @@
   --dl-space-space-threeunits: 48px;
   --dl-space-space-oneandhalfunits: 24px;
 }
+.body {
+  background-color: #000000;
+}
 .button {
   color: #ffffff;
   cursor: pointer;
