@@ -80,7 +80,7 @@ const Hero = (props) => {
               ease={[0.17, 0.67, 0.97, -0.48]}
               scrollPositions={[0.2, 0.5, 0.6, 0.8]}
             >
-              {props.text}{" "}
+              ENTER SEASON II{" "}
             </MotionAnimate>
           </span>
         </Link>
