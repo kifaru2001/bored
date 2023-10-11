@@ -49,7 +49,7 @@ const Hero = (props) => {
                   >
                     <MotionAnimate
                       animation="scrollPosition"
-                      xPos={[-1500, -100]}
+                      xPos={[-1500, -50]}
                     >
                       <span className="hero-text2">INTRODUCING Season II</span>
                     </MotionAnimate>
