@@ -35,7 +35,7 @@
   flex-direction: column;
 }
 .growth-heading {
-  color: #bf8900;
+  color: #d5d5d5;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
@@ -115,7 +115,7 @@
   height: 103px;
   display: flex;
   align-items: center;
-  border-color: #7C7C80;
+  border-color: #7c7c80;
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: row;
   justify-content: center;
@@ -195,7 +195,7 @@
   height: 94px;
   display: flex;
   align-items: center;
-  border-color: #7C7C80;
+  border-color: #7c7c80;
   margin-bottom: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: row;
@@ -209,7 +209,7 @@
   border-radius: var(--dl-radius-radius-round);
 }
 .growth-name1 {
-  color: rgb(255, 255, 255);
+  color: rgb(160, 160, 160);
   font-size: 18px;
   font-family: "Arial Black";
   line-height: 27px;
@@ -251,7 +251,11 @@
   border-radius: var(--dl-radius-radius-round);
   flex-direction: row;
   justify-content: flex-start;
-  background-image: radial-gradient(circle at right bottom, rgb(102, 20, 21) 1.00%,rgb(247, 198, 0) 100.00%);
+  background-image: radial-gradient(
+    circle at right bottom,
+    rgb(102, 20, 21) 1%,
+    rgb(247, 198, 0) 100%
+  );
 }
 .growth-image {
   width: 374px;
@@ -267,7 +271,7 @@
   margin-left: var(--dl-space-space-unit);
   border-radius: var(--dl-radius-radius-radius8);
 }
-@media(max-width: 1600px) {
+@media (max-width: 1600px) {
   .growth-growth {
     width: 100%;
   }
@@ -287,12 +291,12 @@
     height: 347px;
   }
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .growth-growth {
     height: 1838px;
   }
 }
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .growth-growth {
     height: 2840px;
     align-items: center;
@@ -352,7 +356,7 @@
     margin-top: var(--dl-space-space-unit);
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .growth-growth {
     height: 2063px;
     align-items: center;
@@ -422,7 +426,7 @@
     height: 145px;
   }
 }
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .growth-growth {
     width: 478px;
     height: 2053px;

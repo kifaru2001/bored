@@ -7,7 +7,7 @@
   align-items: center;
   border-color: #ffffff;
   border-width: 1px;
-  border-radius: var(--dl-radius-radius-round);
+  border-radius: 16px;
   flex-direction: row;
   justify-content: center;
 }
