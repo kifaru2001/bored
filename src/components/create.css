@@ -28,7 +28,7 @@
   background-image: radial-gradient(
     circle at center top,
     rgba(15, 15, 15, 0.21) 4%,
-    rgb(255, 141, 19) 51%,
+    rgba(255, 141, 19, 0.215) 51%,
     rgba(43, 26, 11, 0.31) 80%
   );
 }

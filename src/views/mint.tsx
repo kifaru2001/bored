@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import styles from "./mint.module.css";
 import "./home.css";
+import "./styles.css";
 import {
   MediaRenderer,
   Web3Button,
@@ -19,6 +20,7 @@ import { Input } from "web3uikit";
 import NAVI from "../components/navi";
 import Profile from "../views/profile/[walletAddress].tsx";
 import Footer from "../components/footer";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import { useState } from "react";
 
@@ -110,6 +112,12 @@ const Mint: NextPage = () => {
                         {totalSupply?.toNumber()}
                       </p>
                       <hr />
+                      <ProgressBar
+                        maxCompleted={totalSupply?.toString() / 10}
+                        bgColor="orange"
+                        labelClassName="label"
+                        completed={totalClaimSupply?.toString() / 10}
+                      />
                     </p>
                   ) : (
                     <p>Loading...</p>
@@ -125,7 +133,9 @@ const Mint: NextPage = () => {
                       ) : (
                         <div>
                           <hr />
-                          <p style={{ color: "gray" }}>Eligible to claim</p>
+                          <p style={{ color: "gray" }}>
+                            YOU ARE Eligible TO MINT SII WHALES
+                          </p>
                           <hr stlye={{ color: "white" }} />
                           <div className={styles.claimContainer}>
                             <div className={styles.claimValue}>
@@ -150,7 +160,11 @@ const Mint: NextPage = () => {
                             </div>
                             <hr />
                             <Web3Button
-                              style={{ color: "orange", background: "black" }}
+                              style={{
+                                color: "orange",
+                                background: "black",
+                                textAlign: "center",
+                              }}
                               contractAddress={
                                 "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E"
                               }

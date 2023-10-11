@@ -189,36 +189,36 @@
 }
 .claimInput {
   color: #ffffff;
-  padding: 10px;
+  padding: 1rem 1rem;
   border-radius: 4px;
-  border: none;
+  border: solid;
+  border-width: 1px;
   margin: 0px 0.25rem;
   background: transparent;
   width: 35%;
   text-align: center;
+  background: black;
 }
 .claimBtn {
-  background-color: #404040;
+  background-color: #000000;
   color: #ededed;
   padding: 1rem 1rem;
   border-radius: 4px;
   cursor: pointer;
-  border-radius: 16px;
-  font-size: 20px;
-  margin: 5px;
+  border-radius: 8px;
+  font-size: 24px;
 }
 
 .NFTCard {
   background-color: #1b212900;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border-radius: 16px;
-  margin-bottom: 2rem;
-  max-width: 80%;
+  width: auto;
   margin: 0.5%;
   text-align: center;
 }
