@@ -41,8 +41,9 @@
   --dl-space-space-threeunits: 48px;
   --dl-space-space-oneandhalfunits: 24px;
 }
-.body {
+body {
   background-color: #000000;
+  color: white;
 }
 .button {
   color: #ffffff;

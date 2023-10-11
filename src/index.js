@@ -10,6 +10,7 @@ import {
 import "./style.css";
 import Home from "./views/home";
 import Join from "./views/join";
+import Mint from "./views/mint.tsx";
 import NotFound from "./views/not-found";
 import ComingSoon from "./views/coming-soon";
 import reportWebVitals from "./reportWebVitals";
@@ -34,6 +35,7 @@ const App = () => {
           <Switch>
             <Route component={Home} exact path="/" />
             <Route component={Join} exact path="/join" />
+            <Route component={Mint} exact path="/mint" />
             <Route component={ComingSoon} exact path="/coming-soon" />
             <Route component={NotFound} path="**" />
             <Redirect to="**" />
