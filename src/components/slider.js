@@ -10,23 +10,50 @@ const Slider = (props) => {
     <section className="slider-slider">
       <div className="slider-header">
         <h2 className="slider-heading">
-          <MotionAnimate animation="scrollPosition" xPos={[1400, -600]}>
-            <h4 className="slider-text">WHALES SEASON II</h4>
-          </MotionAnimate>
-          <MotionAnimate animation="scrollPosition" xPos={[-700, 500]}>
-            <span>
-              {" "}
-              IS NEXT LEVEL
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: " ",
-                }}
-              />
-            </span>
-          </MotionAnimate>
-          <MotionAnimate animation="scrollPosition" xPos={[350, -400]}>
-            <span className="slider-text2">GENIUS</span>
-          </MotionAnimate>
+          <div
+            style={{
+              background: "#000",
+              width: "1900px",
+              marginLeft: "-20%",
+              padding: "1%",
+            }}
+          >
+            <MotionAnimate animation="scrollPosition" xPos={[1400, -600]}>
+              <h4 className="slider-text">SEASON II is a puzzle</h4>
+            </MotionAnimate>
+          </div>
+          <div
+            style={{
+              background: "#ffffff8a",
+              width: "1900px",
+              marginLeft: "-20%",
+              padding: "1%",
+            }}
+          >
+            <MotionAnimate animation="scrollPosition" xPos={[-200, 500]}>
+              <span>
+                {" "}
+                ONLY A VIRTUOSO
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: " ",
+                  }}
+                />
+              </span>
+            </MotionAnimate>
+          </div>
+          <div
+            style={{
+              background: "#000",
+              width: "1900px",
+              marginLeft: "-20%",
+              padding: "1%",
+            }}
+          >
+            <MotionAnimate animation="scrollPosition" xPos={[550, -400]}>
+              <span className="slider-text2">CAN SOLVE</span>
+            </MotionAnimate>
+          </div>
         </h2>
         <hr />
       </div>
