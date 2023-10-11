@@ -36,7 +36,9 @@ const Hero = (props) => {
                       animation="scrollPosition"
                       xPos={[300, -960]}
                     >
-                      <span className="hero-text">Bored Whales Yacht Club</span>
+                      <span className="hero-text">
+                        Bored Whales Yacht Club{" "}
+                      </span>
                     </MotionAnimate>
                   </div>
                   <div
@@ -60,6 +62,7 @@ const Hero = (props) => {
             </div>
           </div>
           <hr />
+
           <MotionAnimate animation="scrollOpacity">
             <p className="hero-caption">
               10000 Provably rare PFPS BORN ON CORE BLOCKCHAIN. SEASON II IS

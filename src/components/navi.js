@@ -12,6 +12,7 @@ import {
   rainbowWallet,
   darkTheme,
 } from "@thirdweb-dev/react";
+import { MotionAnimate } from "react-motion-animate";
 
 import PropTypes from "prop-types";
 
@@ -101,6 +102,24 @@ const NAVI = (props) => {
             }
           />
         </div>
+        <MotionAnimate
+          variant={{
+            hidden: { opacity: 0.2, rotate: -180 },
+            show: {
+              opacity: 0.8,
+              rotate: 0,
+              transition: {
+                repeat: Infinity,
+                duration: 3,
+                repeatDelay: 1,
+                type: "spring",
+              },
+            },
+          }}
+        >
+          {" "}
+          <img src="/core.png" alt="core" height={80} />
+        </MotionAnimate>
         <div data-thq="thq-burger-menu" className="navi-burger-menu">
           <svg viewBox="0 0 1024 1024" className="navi-icon">
             <path
