@@ -65,6 +65,9 @@ const Mint: NextPage = () => {
     <>
       <div style={{ marginBottom: "10%" }}>
         {" "}
+        <NAVI />
+        <hr />
+        <hr />
         <div className={styles.container}>
           <main className={styles.main}>
             {!isContractMetadataLoading && (

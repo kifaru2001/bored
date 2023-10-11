@@ -19,7 +19,7 @@ const Slider = (props) => {
             }}
           >
             <MotionAnimate animation="scrollPosition" xPos={[1400, -600]}>
-              <h4 className="slider-text">SEASON II is a puzzle</h4>
+              <h4 className="slider-text">SEASON II IS NEXT-LEVEL GENIUS</h4>
             </MotionAnimate>
           </div>
           <div
@@ -33,7 +33,7 @@ const Slider = (props) => {
             <MotionAnimate animation="scrollPosition" xPos={[-200, 500]}>
               <span>
                 {" "}
-                ONLY A VIRTUOSO
+                WHALES BELONG IN AN OCEAN
                 <span
                   dangerouslySetInnerHTML={{
                     __html: " ",
@@ -51,7 +51,7 @@ const Slider = (props) => {
             }}
           >
             <MotionAnimate animation="scrollPosition" xPos={[550, -400]}>
-              <span className="slider-text2">CAN CRACK</span>
+              <span className="slider-text2">SWIM FREE WITH THE WAVES</span>
             </MotionAnimate>
           </div>
         </h2>
