@@ -166,7 +166,7 @@ const Mint: NextPage = () => {
                             }
                             onSuccess={() => `/profile/${address}`}
                           >
-                            MINT SEAON II
+                            MINT SEASON II
                           </Web3Button>
                         </div>
                       </div>
