@@ -21,8 +21,8 @@
   flex-direction: column;
 }
 .experience-image {
-  width: 596px;
-  height: 337px;
+  width: 700px;
+  height: 437px;
   z-index: 100;
   object-fit: cover;
   border-color: #ffffff;
@@ -219,12 +219,12 @@
   font-family: "Pixel NES";
   line-height: 24px;
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .experience-image {
     width: 461px;
   }
 }
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .experience-experience {
     height: 1306px;
     align-items: flex-start;
@@ -233,7 +233,7 @@
     background-color: #060606;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .experience-experience {
     height: 1105px;
     padding-top: var(--dl-space-space-threeunits);
@@ -275,7 +275,7 @@
     line-height: 24px;
   }
 }
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .experience-experience {
     width: 478px;
     height: 971px;

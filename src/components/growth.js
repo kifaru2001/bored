@@ -127,7 +127,7 @@ const Growth = (props) => {
         >
           <img
             alt={props.image_alt}
-            src="https://bafybeiaqg3jxazgesaftbxetglihsbcywklkmqzpgif53627ia5oal2oxi.ipfs.nftstorage.link/ipfs/bafybeiaqg3jxazgesaftbxetglihsbcywklkmqzpgif53627ia5oal2oxi/adhsilzs%3Bl.png"
+            src="https://bafybeig4iagkcloenxeswcbnqtdbkycq25ipylsl6qezjck6sg7ndfciqa.ipfs.nftstorage.link/ipfs/bafybeig4iagkcloenxeswcbnqtdbkycq25ipylsl6qezjck6sg7ndfciqa/OUJESH.png"
             className="growth-image1"
           />
         </MotionAnimate>

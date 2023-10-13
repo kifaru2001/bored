@@ -18,7 +18,7 @@ const Experience = (props) => {
           <MotionAnimate animation="fadeInUp" reset={true}>
             <img
               alt={props.image_alt}
-              src="https://bafybeiauf5bk7kpbfnezrffjalyr24qgugfsbvecerylmhamcbepk5iaiu.ipfs.nftstorage.link/ipfs/bafybeiauf5bk7kpbfnezrffjalyr24qgugfsbvecerylmhamcbepk5iaiu/nljbouip.png"
+              src="https://bafybeieszztaslkoepdodf4qalodg7ieqlezf47mryg2a5yxlpw3qbp4zu.ipfs.nftstorage.link/ipfs/bafybeieszztaslkoepdodf4qalodg7ieqlezf47mryg2a5yxlpw3qbp4zu/vhfkm.png"
               className="experience-image"
             />
           </MotionAnimate>

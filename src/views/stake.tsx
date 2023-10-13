@@ -66,7 +66,6 @@ const Stake: NextPage = () => {
       <div
         style={{
           margin: "5%",
-          fontFamily: "monospace",
           fontSize: "25px",
           width: "100%",
         }}
