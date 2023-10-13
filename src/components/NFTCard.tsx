@@ -5,7 +5,7 @@ import {
   Web3Button,
 } from "@thirdweb-dev/react";
 import type { FC } from "react";
-import { nftDropContractAddress, stakingContractAddress } from "./addresses.js";
+import { contractAddress2, stakingContractAddress } from "./addresses.js";
 import styles from "../styles/Home.module.css";
 
 interface NFTCardProps {
@@ -13,7 +13,7 @@ interface NFTCardProps {
 }
 
 const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
-  const { contract } = useContract(nftDropContractAddress, "nft-drop");
+  const { contract } = useContract(contractAddress2, "nft-drop");
   const { data: nft } = useNFT(contract, tokenId);
 
   return (

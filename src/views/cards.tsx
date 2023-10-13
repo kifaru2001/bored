@@ -12,7 +12,7 @@ import { BigNumber, ethers } from "ethers";
 import { useEffect, useState } from "react";
 import NFTCard from "../components/NFTCard.tsx";
 import {
-  contractAddress2,
+  nftDropContractAddress,
   stakingContractAddress1,
   tokenContractAddress,
 } from "./addresses.js";
@@ -22,7 +22,7 @@ import NAVI from "../components/navi";
 const Stake: NextPage = () => {
   const address = useAddress();
   const { contract: nftDropContract } = useContract(
-    contractAddress2,
+    nftDropContractAddress,
     "nft-drop",
   );
   const { contract: tokenContract } = useContract(
@@ -56,7 +56,7 @@ const Stake: NextPage = () => {
       stakingContractAddress1,
     );
     if (!isApproved) {
-      await nftDropContract?.setApprovalForAll(stakingContractAddress1, true);
+      await nftDropContract?.setApprovalForAll(stakingContractAddress, true);
     }
     await contract?.call("stake", [[id]]);
   }
@@ -122,7 +122,7 @@ const Stake: NextPage = () => {
                 color: "Orange",
               }}
               action={(contract) => contract.call("claimRewards")}
-              contractAddress={stakingContractAddress1}
+              contractAddress={stakingContractAddress}
             >
               Claim Rewards
             </Web3Button>
