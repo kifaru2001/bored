@@ -79,6 +79,7 @@ const Mint: NextPage = () => {
       <hr />
       <div className={styles.container}>
         <main className={styles.main}>
+          <img src="/favicon1.png" height="100px" />
           {!isContractMetadataLoading && (
             <div className={styles.heroSection}>
               <div>
@@ -177,7 +178,7 @@ const Mint: NextPage = () => {
                             }
                             onSuccess={() => `/profile/${address}`}
                           >
-                            MINT SEASON II
+                            MINT CARDS
                           </Web3Button>
                         </div>
                       </div>
