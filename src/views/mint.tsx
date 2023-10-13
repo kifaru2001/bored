@@ -26,7 +26,7 @@ const Mint: NextPage = () => {
   const address = useAddress();
   const maxClaimQuantity = 100;
 
-  const { contract } = useContract(
+  const { contract, isLoading } = useContract(
     "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E",
   );
 
@@ -60,6 +60,17 @@ const Mint: NextPage = () => {
       setClaimQuantity(claimQuantity - 1);
     }
   };
+
+  if (isLoading) {
+    return(
+      <div style={{
+        alignItems: "center",
+        display: "flex",
+        flexDirection: "center",
+        padding: "10%"
+      }}>LOADING..</div>
+    )
+  }
 
   return (
     <div>
