@@ -70,12 +70,13 @@ const Hero = (props) => {
               UPON THE HOLDER TO DECIDE, DO YOU WANT TO TAKE YOUR WHALE ON A
               BUMPY RIDE AND BATTLE THE WAVES, OR DO YOU JUST WANT TO LET IT
               CHILL IN ITS COMFY BLOCK AND EARN WHLS REWADS. IRREGADLESS, YOU
-              CAN SWIM FREE, IT&apos;S A BIG PERMISSIONLESS OCEAN JUST FOR US
+              CAN SWIM FREE, IT&apos;S A BIG PERMISSIONLESS OCEAN JUST FOR US. 
+              BWYC AND WHALECARD HOLDERS WILL BE ADDED TO WHITELIST.
             </p>
           </MotionAnimate>
         </div>
 
-        <Link to="/coming-soon" className="hero-navlink button">
+        <Link to="/mint" className="hero-navlink button">
           <span className="hero-text4">
             {" "}
             <MotionAnimate
@@ -83,7 +84,7 @@ const Hero = (props) => {
               ease={[0.17, 0.67, 0.97, -0.48]}
               scrollPositions={[0.2, 0.5, 0.6, 0.8]}
             >
-              ENTER SEASON II{" "}
+              CLAIM WHALECARDS{" "}
             </MotionAnimate>
           </span>
         </Link>
