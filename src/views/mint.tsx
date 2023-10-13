@@ -62,14 +62,18 @@ const Mint: NextPage = () => {
   };
 
   if (isLoading) {
-    return(
-      <div style={{
-        alignItems: "center",
-        display: "flex",
-        flexDirection: "center",
-        padding: "10%"
-      }}>LOADING..</div>
-    )
+    return (
+      <div
+        style={{
+          alignItems: "center",
+          display: "flex",
+          flexDirection: "center",
+          padding: "10%",
+        }}
+      >
+        LOADING..
+      </div>
+    );
   }
 
   return (
@@ -123,6 +127,7 @@ const Mint: NextPage = () => {
                       labelClassName="label"
                       completed={totalClaimSupply?.toString() / 10}
                     />
+                    <hr />
                   </p>
                 ) : (
                   <p>Loading...</p>
@@ -181,13 +186,14 @@ const Mint: NextPage = () => {
                             MINT CARDS
                           </Web3Button>
                         </div>
+                        <hr />
                       </div>
                     )
                   ) : (
                     <p>Checking Eligibility...</p>
                   )
                 ) : (
-                  <p>Connect wallet</p>
+                  <ConnectWallet />
                 )}
                 <div></div>
               </div>
