@@ -200,7 +200,6 @@ const Mint: NextPage = () => {
             </div>
           )}
           <hr />
-          <Profile />
         </main>
       </div>
     </div>

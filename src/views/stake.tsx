@@ -18,6 +18,7 @@ import {
 } from "./addresses.js";
 import styles from "../styles/Home.module.css";
 import NAVI from "../components/navi";
+import Mint from "./mint.tsx";
 
 const Stake: NextPage = () => {
   const address = useAddress();
@@ -70,7 +71,7 @@ const Stake: NextPage = () => {
           width: "100%",
         }}
       >
-        THE OCEAN🌊 IS LOADING...
+        LOADING...
       </div>
     );
   }
@@ -93,7 +94,8 @@ const Stake: NextPage = () => {
           <ConnectWallet />
         ) : (
           <>
-            <h1>$WHLS BALANCES</h1>
+            <h1 style={{ textAlign: "center" }}>WHALECARD STAKING</h1>
+            <Mint />
             <div className={styles.tokenGrid}>
               <div className={styles.tokenItem}>
                 <h3 className={styles.tokenLabel}>Rewards Earned</h3>
@@ -128,7 +130,7 @@ const Stake: NextPage = () => {
             </Web3Button>
 
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
-            <h2>Your Staked Whale NFT</h2>
+            <h2 style={{ textAlign: "center" }}>Your Staked Whale NFT</h2>
             <div className={styles.nftBoxGrid}>
               {stakedTokens &&
                 stakedTokens[0]?.map((stakedToken: BigNumber) => (
@@ -140,7 +142,7 @@ const Stake: NextPage = () => {
             </div>
 
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
-            <h2>Your Unstaked Whale NFTs</h2>
+            <h2 style={{ textAlign: "center" }}>Your Unstaked Cards</h2>
             <div className={styles.nftBoxGrid}>
               {ownedNfts?.map((nft) => (
                 <div key={nft.metadata.id.toString()}>

@@ -14,6 +14,7 @@ import Create from "../components/create";
 import Footer from "../components/footer";
 import NAVI from "../components/navi";
 import "./home.css";
+import Stake from "./stake.tsx";
 
 const Home = (props) => {
   return (
@@ -37,6 +38,9 @@ const Home = (props) => {
       <Objectives></Objectives>
       <Growth></Growth>
       <Experience></Experience>
+      <div id="stake">
+        <Stake></Stake>
+      </div>
       <Create></Create>
       <Footer></Footer>
       <div>
