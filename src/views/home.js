@@ -20,7 +20,7 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>BWYC SEAON II</title>
+        <title>BWYC SEASON II</title>
         <meta
           name="description"
           content="A COLLECION OF 10000 PROVABLY RARE PFPS BORN ON CORE BLOCKCHAIN"
