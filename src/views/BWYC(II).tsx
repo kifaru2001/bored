@@ -15,19 +15,18 @@ import {
 
 import { ethers } from "ethers";
 import { Input } from "web3uikit";
-import NAVI from "../components/navi";
 import Profile from "../views/profile/[walletAddress].tsx";
 import Footer from "../components/footer";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import { useState } from "react";
 
-const Mint: NextPage = () => {
+const BWYC: NextPage = () => {
   const address = useAddress();
-  const maxClaimQuantity = 10;
+  const maxClaimQuantity = 100;
 
   const { contract, isLoading } = useContract(
-    "0xF6C2584850Fd1F50fc979F72888Fb67CFa39a2C2",
+    "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E",
   );
 
   const { data: contractMetadata, isLoading: isContractMetadataLoading } =
@@ -175,21 +174,21 @@ const Mint: NextPage = () => {
                               textAlign: "center",
                             }}
                             contractAddress={
-                              "0xF6C2584850Fd1F50fc979F72888Fb67CFa39a2C2"
+                              "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E"
                             }
                             action={(contract) =>
                               contract.erc721.claim(claimQuantity)
                             }
                             onSuccess={() => `/profile/${address}`}
                           >
-                            MINT WHALES
+                            MINT CARDS
                           </Web3Button>
                         </div>
                         <hr />
                       </div>
                     )
                   ) : (
-                    <p>Please Wait, Checking Eligibility...</p>
+                    <p>Checking Eligibility...</p>
                   )
                 ) : (
                   <ConnectWallet />
@@ -205,4 +204,4 @@ const Mint: NextPage = () => {
   );
 };
 
-export default Mint;
+export default BWYC;

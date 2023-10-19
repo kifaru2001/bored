@@ -19,6 +19,7 @@ import {
 import styles from "../styles/Home.module.css";
 import NAVI from "../components/navi";
 import Mint from "./mint.tsx";
+import BWYC from "./BWYC(II).tsx";
 
 const Stake: NextPage = () => {
   const address = useAddress();
@@ -79,7 +80,6 @@ const Stake: NextPage = () => {
   return (
     <>
       <div className={styles.container}>
-        <NAVI rootClassName="navi-root-class-name"></NAVI>
         <hr />
         <hr />
         <hr />
@@ -95,7 +95,7 @@ const Stake: NextPage = () => {
         ) : (
           <>
             <h1 style={{ textAlign: "center" }}>WHALECARD STAKING</h1>
-            <Mint />
+            <BWYC />
             <div className={styles.tokenGrid}>
               <div className={styles.tokenItem}>
                 <h3 className={styles.tokenLabel}>Rewards Earned</h3>

@@ -15,6 +15,8 @@ import Footer from "../components/footer";
 import NAVI from "../components/navi";
 import "./home.css";
 import Stake from "./stake.tsx";
+import BWYC from "../views/BWYC(II).tsx";
+import Page from "./page.tsx";
 
 const Home = (props) => {
   return (
@@ -31,16 +33,18 @@ const Home = (props) => {
           content="A COLLECION OF 10000 PROVABLY RARE PFPS BORN ON CORE BLOCKCHAIN"
         />
       </Helmet>
-      <Note></Note>
-      <Hero rootClassName="hero-root-class-name"></Hero>
 
+      <Note></Note>
+
+      <Hero rootClassName="hero-root-class-name"></Hero>
+      <div id="stake">
+        <Stake />
+      </div>
       <Slider></Slider>
       <Objectives></Objectives>
       <Growth></Growth>
       <Experience></Experience>
-      <div id="stake">
-        <Stake></Stake>
-      </div>
+
       <Create></Create>
       <Footer></Footer>
       <div>
