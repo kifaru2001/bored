@@ -44,7 +44,11 @@ export default function Profile() {
                       <div key={nft.metadata.id} className={styles.NFTCard}>
                         <ThirdwebNftMedia
                           metadata={nft.metadata}
-                          style={{ borderRadius: "8px", width: "100%" }}
+                          style={{
+                            borderRadius: "16px",
+                            width: "100%",
+                            height: "250px",
+                          }}
                         />
                         <hr />
                         <h3>{nft.metadata.name}</h3>
