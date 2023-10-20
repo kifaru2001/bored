@@ -136,7 +136,7 @@ const Mint: NextPage = () => {
                       </p>
                       <hr />
                       <ProgressBar
-                        maxCompleted={totalSupply?.toString() / 10}
+                        maxCompleted={1000 / 10}
                         bgColor="orange"
                         labelClassName="label"
                         completed={totalClaimSupply?.toString() / 10}

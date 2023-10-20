@@ -8,6 +8,7 @@
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
   align-items: center;
+
 }
 .footer-content {
   gap: var(--dl-space-space-fiveunits);
