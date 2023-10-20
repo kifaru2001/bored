@@ -14,6 +14,7 @@ import Stake from "./views/stake.tsx";
 import Page from "./views/page.tsx";
 import Profile from "./views/profile/[walletAddress].tsx";
 import Mint from "./views/mint.tsx";
+import BWYC from "./views/BWYC(II).tsx";
 import NotFound from "./views/not-found";
 import ComingSoon from "./views/coming-soon";
 import reportWebVitals from "./reportWebVitals";
@@ -38,7 +39,7 @@ const App = () => {
           <Switch>
             <Route component={Home} exact path="/" />
             <Route component={Join} exact path="/join" />
-            <Route component={Mint} exact path="/mint" />
+            <Route component={BWYC} exact path="/mint" />
             <Route component={Stake} exact path="/stake" />
             <Route component={Page} exact path="/season2" />
             <Route component={Profile} exact path="/profile" />
