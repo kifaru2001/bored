@@ -127,8 +127,7 @@ const Mint: NextPage = () => {
                     <p>
                       Claimed: <hr />
                       <p style={{ color: "orange", fontSize: "20px" }}>
-                        {totalClaimSupply?.toNumber()} /{" "}
-                        {totalSupply?.toNumber()}
+                        {totalClaimSupply?.toNumber()} / 1000
                       </p>
                       <hr />
                       <ProgressBar
@@ -205,8 +204,6 @@ const Mint: NextPage = () => {
                   ) : (
                     <ConnectWallet />
                   )}
-
-                  <Profile />
                 </div>
               </div>
             )}
@@ -214,6 +211,7 @@ const Mint: NextPage = () => {
           </main>
         </div>
       </div>
+      <Profile />
     </>
   );
 };

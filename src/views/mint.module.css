@@ -236,7 +236,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 16px;
-  width: 100%;
+  width: fit-content;
   margin: 0.5%;
   text-align: center;
 }
