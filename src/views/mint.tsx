@@ -75,13 +75,11 @@ const Mint: NextPage = () => {
       </div>
     );
   }
-  if (address) {
-    <NAVI rootClassName="navi-root-class-name"></NAVI>;
-  }
 
   return (
     <>
-      <div>
+      <NAVI />
+      <section style={{ position: "static" }}>
         <hr />
         <hr />
         <div className={styles.container}>
@@ -89,7 +87,7 @@ const Mint: NextPage = () => {
             <img
               src="https://65a85b91315ca838d7a8472fb0e64f92.ipfscdn.io/ipfs/bafybeihmcojs5j6fion3l6nbehkmmyt6ki7pbgq2sws7qxexdgrthr72xi/0.png"
               height="300px"
-              style={{ borderRadius: "32px" }}
+              style={{ borderRadius: "32px", border: "solid" }}
             />
             {!isContractMetadataLoading && (
               <div className={styles.heroSection}>
@@ -108,6 +106,13 @@ const Mint: NextPage = () => {
                         PHASE:
                         <p style={{ color: "orange", fontSize: "20px" }}>
                           {activeClaimPhase?.metadata?.name}
+                        </p>
+                      </p>
+                      <hr />
+                      <p>
+                        Limit:
+                        <p style={{ color: "orange", fontSize: "20px" }}>
+                          10 PER WALLET
                         </p>
                       </p>
                       <hr />
@@ -210,8 +215,9 @@ const Mint: NextPage = () => {
             <hr />
           </main>
         </div>
-      </div>
+      </section>
       <Profile />
+      <Footer />
     </>
   );
 };

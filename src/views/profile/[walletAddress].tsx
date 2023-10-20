@@ -24,12 +24,21 @@ export default function Profile() {
 
   return (
     <>
+      <h1>DELAYED REVEAL</h1>
       <hr />
+      <p
+        style={{
+          textAlign: "center",
+        }}
+      >
+        NFTs will be concealed until Phase Completes.
+      </p>
       <div
         style={{
           display: "flex",
           marginBottom: "20px",
           position: "static",
+          width: "60%",
         }}
       >
         {address ? (
@@ -47,7 +56,7 @@ export default function Profile() {
                           style={{
                             borderRadius: "16px",
                             width: "100%",
-                            height: "250px",
+                            height: "220px",
                           }}
                         />
                         <hr />
