@@ -179,27 +179,6 @@ const NAVI = (props) => {
                   borderColor: "orange",
                   borderWidth: "1px",
                 }}
-                theme={darkTheme({
-                  modalBg: "black",
-                  dropdownBg: "#000000",
-                  accentButtonBg: "#ff5900",
-                })}
-                btnTitle={"Connect Wallet"}
-                modalTitle={"BWYC II"}
-                switchToActiveChain={true}
-                modalSize={"wide"}
-                welcomeScreen={{
-                  title: "An Ocean Awaits you. ",
-                  subtitle: "",
-                  img: {
-                    src: "https://media0.giphy.com/media/xKsOaVawxyuv7e5t0J/giphy.gif?cid=ecf05e47xr14r475p5f67pok08zk6axq18b4l7iu0imt7nqq&ep=v1_stickers_search&rid=giphy.gif&ct=s",
-                    width: 150,
-                    height: 150,
-                  },
-                }}
-                modalTitleIconUrl={
-                  "https://boredwhalesyachtclub.org/favicon-200h.png"
-                }
               />
             </nav>
           </div>

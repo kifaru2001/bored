@@ -1,13 +1,5 @@
-body {
-  align-items: "center";
-  backdrop-filter: blur(50px);
-  background-size: contain;
-  max-height: max-content;
-  background-repeat: no-repeat;
-  background-image: url("https://images.unsplash.com/photo-1637055159652-2b8837731f00?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-}
 .container {
-  padding: 0 1rem;
+  padding: 0 2rem;
   max-width: 1900px;
   width: 100%;
   justify-items: center;
