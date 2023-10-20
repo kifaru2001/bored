@@ -75,10 +75,12 @@ const Mint: NextPage = () => {
       </div>
     );
   }
+  if (address) {
+    <NAVI rootClassName="navi-root-class-name"></NAVI>;
+  }
 
   return (
     <>
-      <NAVI />
       <div>
         <hr />
         <hr />
