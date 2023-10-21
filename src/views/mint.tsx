@@ -24,7 +24,7 @@ import { useState } from "react";
 
 const Mint: NextPage = () => {
   const address = useAddress();
-  const maxClaimQuantity = 10;
+  const maxClaimQuantity = 20;
 
   const { contract, isLoading } = useContract(
     "0xF6C2584850Fd1F50fc979F72888Fb67CFa39a2C2",
@@ -112,7 +112,7 @@ const Mint: NextPage = () => {
                       <p>
                         Limit:
                         <p style={{ color: "orange", fontSize: "20px" }}>
-                          10 PER WALLET
+                          20 PER WALLET
                         </p>
                       </p>
                       <hr />
