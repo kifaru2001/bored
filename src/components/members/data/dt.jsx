@@ -34,10 +34,6 @@ export let data = [
     score: 20,
   },
   {
-    displayName: address1,
-    score: 20,
-  },
-  {
     displayName: address6,
     score: 20,
   },
