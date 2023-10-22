@@ -61,12 +61,6 @@ const NAVI = (props) => {
             >
               MARKETPLACE
             </a>
-            <a
-              href="https://chatroom.boredwhalesyachtclub.org"
-              className="navi-text05"
-            >
-              CHATROOM
-            </a>
           </nav>
           <ConnectWallet
             style={{

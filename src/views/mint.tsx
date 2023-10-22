@@ -19,10 +19,26 @@ import NAVI from "../components/navi";
 import Profile from "../views/profile/[walletAddress].tsx";
 import Footer from "../components/footer";
 import ProgressBar from "@ramonak/react-progress-bar";
+import Members from "../components/members/mems";
+import { getInitialData, genNextData } from "../components/members/data/indx";
 
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Mint: NextPage = () => {
+  const [data, setData] = useState(getInitialData());
+  const doSwitch = () => {
+    setData((d) => {
+      [d[0], d[1]] = [d[1], d[0]];
+      d[0].score += 1000;
+      d[1].score += 2000;
+      return [...d];
+    });
+  };
+  useEffect(() => {
+    // const timer = setInterval(() => setData(genNextData()), 1000);
+    // return () => clearInterval(timer);
+  }, []);
+
   const address = useAddress();
   const maxClaimQuantity = 50;
 
@@ -75,11 +91,17 @@ const Mint: NextPage = () => {
       </div>
     );
   }
-
   return (
     <>
       <NAVI />
       <section style={{ position: "static" }}>
+        <hr />
+        <hr />
+        <hr />
+        <hr /> <hr />
+        <hr />
+        <hr />
+        <hr />
         <hr />
         <hr />
         <div className={styles.container}>
@@ -89,6 +111,9 @@ const Mint: NextPage = () => {
               height="300px"
               style={{ borderRadius: "32px", border: "solid" }}
             />
+            <hr />
+            <Members data={data} />
+            <hr />
             {!isContractMetadataLoading && (
               <div className={styles.heroSection}>
                 <div>
@@ -105,7 +130,7 @@ const Mint: NextPage = () => {
                       <p>
                         PHASE:
                         <p style={{ color: "orange", fontSize: "20px" }}>
-                          {activeClaimPhase?.metadata?.name} 
+                          {activeClaimPhase?.metadata?.name}
                         </p>
                       </p>
                       <hr />
