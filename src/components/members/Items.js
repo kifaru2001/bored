@@ -16,7 +16,7 @@ export default function Item({ row }) {
       </div>
       <span className="item__name">{row.displayName}</span>
       <p>...</p>
-      <span className="item__score">{row.score}</span>
+      <span className="item__score">{row.score} Whales</span>
     </li>
   );
 }
