@@ -23,7 +23,7 @@ const Footer = (props) => {
               <span className="footer-header">{props.Header}</span>
               <div className="footer-list">
                 <a
-                  href="https://twitter.com/bwycdinals"
+                  href="https://twitter.com/boredworkshop"
                   className="footer-text1"
                 >
                   {props.text3}
