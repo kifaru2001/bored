@@ -242,6 +242,8 @@ const Mint: NextPage = () => {
         </div>
       </section>
       <Profile />
+      <hr />
+      <a href="gallery.boredwhalesyachtclub.org">VIEW GALLERY</a>
       <Footer />
     </>
   );

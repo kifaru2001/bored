@@ -132,7 +132,7 @@ const Stake: NextPage = () => {
               {ownedNfts?.map((nft) => (
                 <div key={nft.metadata.id.toString()}>
                   <ThirdwebNftMedia
-                    style={{ borderRadius: "16px", width: "100%" }}
+                    style={{ borderRadius: "32px", width: "100%", height: "250px" }}
                     metadata={nft.metadata}
                     className={styles.nftMedia}
                   />
@@ -145,7 +145,7 @@ const Stake: NextPage = () => {
                       borderStyle: "solid",
                       borderColor: "Orange",
                       color: "Orange",
-                      alignSelf: "center"
+                      alignItems: "center"
                     }}
                     contractAddress={stakingContractAddress}
                     action={() => stakeNft(nft.metadata.id)}
