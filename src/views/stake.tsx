@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import NFTCard from "../components/NFTCard.tsx";
 import {
   contractAddress2,
-  stakingContractAddress1,
+  stakingContractAddress,
   tokenContractAddress,
 } from "./addresses.js";
 import styles from "../styles/Home.module.css";
@@ -31,7 +31,7 @@ const Stake: NextPage = () => {
     tokenContractAddress,
     "token",
   );
-  const { contract, isLoading } = useContract(stakingContractAddress1);
+  const { contract, isLoading } = useContract(stakingContractAddress);
   const { data: ownedNfts } = useOwnedNFTs(nftDropContract, address);
   const { data: tokenBalance } = useTokenBalance(tokenContract, address);
   const [claimableRewards, setClaimableRewards] = useState<BigNumber>();
@@ -55,10 +55,10 @@ const Stake: NextPage = () => {
 
     const isApproved = await nftDropContract?.isApproved(
       address,
-      stakingContractAddress1,
+      stakingContractAddress,
     );
     if (!isApproved) {
-      await nftDropContract?.setApprovalForAll(stakingContractAddress1, true);
+      await nftDropContract?.setApprovalForAll(stakingContractAddress, true);
     }
     await contract?.call("stake", [[id]]);
   }
@@ -94,7 +94,7 @@ const Stake: NextPage = () => {
           <ConnectWallet />
         ) : (
           <>
-            <h1 style={{ textAlign: "center" }}>WHALECARD STAKING</h1>
+            <h1 style={{ textAlign: "center" }}>WHALES STAKING</h1>
             <BWYC />
             <div className={styles.tokenGrid}>
               <div className={styles.tokenItem}>
@@ -115,20 +115,6 @@ const Stake: NextPage = () => {
                 </p>
               </div>
             </div>
-
-            <Web3Button
-              style={{
-                backgroundColor: "black",
-                borderStyle: "solid",
-                borderColor: "Orange",
-                color: "Orange",
-              }}
-              action={(contract) => contract.call("claimRewards")}
-              contractAddress={stakingContractAddress1}
-            >
-              Claim Rewards
-            </Web3Button>
-
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
             <h2 style={{ textAlign: "center" }}>Your Staked Whale NFT</h2>
             <div className={styles.nftBoxGrid}>
@@ -140,9 +126,8 @@ const Stake: NextPage = () => {
                   />
                 ))}
             </div>
-
             <hr className={`${styles.divider} ${styles.spacerTop}`} />
-            <h2 style={{ textAlign: "center" }}>Your Unstaked Cards</h2>
+            <h2 style={{ textAlign: "center" }}>Your Unstaked Whales</h2>
             <div className={styles.nftBoxGrid}>
               {ownedNfts?.map((nft) => (
                 <div key={nft.metadata.id.toString()}>
@@ -160,8 +145,9 @@ const Stake: NextPage = () => {
                       borderStyle: "solid",
                       borderColor: "Orange",
                       color: "Orange",
+                      alignSelf: "center"
                     }}
-                    contractAddress={stakingContractAddress1}
+                    contractAddress={stakingContractAddress}
                     action={() => stakeNft(nft.metadata.id)}
                   >
                     Stake

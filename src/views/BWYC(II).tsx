@@ -26,7 +26,7 @@ const BWYC: NextPage = () => {
   const maxClaimQuantity = 100;
 
   const { contract, isLoading } = useContract(
-    "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E",
+    "0xF6C2584850Fd1F50fc979F72888Fb67CFa39a2C2",
   );
 
   const { data: contractMetadata, isLoading: isContractMetadataLoading } =
@@ -81,7 +81,6 @@ const BWYC: NextPage = () => {
       <hr />
       <div className={styles.container}>
         <main className={styles.main}>
-          <img src="/favicon1.png" height="100px" />
           {!isContractMetadataLoading && (
             <div className={styles.heroSection}>
               <div>
@@ -116,7 +115,7 @@ const BWYC: NextPage = () => {
                   <p>
                     Claimed: <hr />
                     <p style={{ color: "orange", fontSize: "20px" }}>
-                      {totalClaimSupply?.toNumber()} / {totalSupply?.toNumber()}
+                      {totalClaimSupply?.toNumber()} / 1000
                     </p>
                     <hr />
                     <ProgressBar
@@ -181,7 +180,7 @@ const BWYC: NextPage = () => {
                             }
                             onSuccess={() => `/profile/${address}`}
                           >
-                            MINT CARDS
+                            MINT WHALES
                           </Web3Button>
                         </div>
                         <hr />
