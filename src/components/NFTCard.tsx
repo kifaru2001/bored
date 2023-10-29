@@ -19,10 +19,10 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
   return (
     <>
       {nft && (
-        <div>
+        <div style={{alignItems: "center"}}>
           {nft.metadata && (
             <ThirdwebNftMedia
-              style={{ borderRadius: "32px", width: "100%", height: "300px"  }}
+              style={{ borderRadius: "32px", width: "100%", height: "250px"  }}
               metadata={nft.metadata}
               className={styles.nftMedia}
             />
@@ -40,6 +40,7 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
               color: "Orange",
               display: "flex",
               flexDirection: "center",
+              alignItems: "center"
             }}
             action={(contract) =>
               contract?.call("withdraw", [[nft.metadata.id]])
