@@ -22,7 +22,7 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
         <div>
           {nft.metadata && (
             <ThirdwebNftMedia
-              style={{ borderRadius: "16px", width: "100%" }}
+              style={{ borderRadius: "32px", width: "100%", height: "300px"  }}
               metadata={nft.metadata}
               className={styles.nftMedia}
             />
