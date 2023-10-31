@@ -18,7 +18,7 @@ const Slider = (props) => {
               padding: "1%",
             }}
           >
-            <MotionAnimate animation="scrollPosition" xPos={[1400, -600]}>
+            <MotionAnimate animation="scrollPosition" xPos={[2300, 100]}>
               <h4 className="slider-text">SEASON II IS NEXT-LEVEL GENIUS</h4>
             </MotionAnimate>
           </div>
@@ -30,7 +30,7 @@ const Slider = (props) => {
               padding: "1%",
             }}
           >
-            <MotionAnimate animation="scrollPosition" xPos={[-200, 500]}>
+            <MotionAnimate animation="scrollPosition" xPos={[-500, 500]}>
               <span>
                 {" "}
                 WHALES BELONG WITH THE OCEAN

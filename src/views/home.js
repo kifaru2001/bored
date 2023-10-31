@@ -14,9 +14,9 @@ import Create from "../components/create";
 import Footer from "../components/footer";
 import NAVI from "../components/navi";
 import "./home.css";
-import Stake from "./stake.tsx";
 import BWYC from "../views/BWYC(II).tsx";
 import Page from "./page.tsx";
+import Mints from "./mints.tsx"
 
 const Home = (props) => {
   return (
@@ -35,11 +35,11 @@ const Home = (props) => {
       </Helmet>
 
       <Note></Note>
+  
 
       <Hero rootClassName="hero-root-class-name"></Hero>
-      <div id="stake">
-        <Stake />
-      </div>
+      <div id="mint"> <Mints /></div>
+     
       <Slider></Slider>
       <Objectives></Objectives>
       <Growth></Growth>

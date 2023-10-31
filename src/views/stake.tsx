@@ -70,6 +70,7 @@ const Stake: NextPage = () => {
           margin: "5%",
           fontSize: "25px",
           width: "100%",
+          textAlign: "center"
         }}
       >
         LOADING...
@@ -95,7 +96,6 @@ const Stake: NextPage = () => {
         ) : (
           <>
             <h1 style={{ textAlign: "center" }}>WHALES STAKING</h1>
-            <BWYC />
             <div className={styles.tokenGrid}>
               <div className={styles.tokenItem}>
                 <h3 className={styles.tokenLabel}>Rewards Earned</h3>

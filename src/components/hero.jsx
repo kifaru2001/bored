@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { MotionAnimate } from "react-motion-animate";
 import Mint from "../views/mint.tsx";
 
+
 import "./hero.css";
 
 const Hero = (props) => {

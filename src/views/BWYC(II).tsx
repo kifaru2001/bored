@@ -171,6 +171,7 @@ const BWYC: NextPage = () => {
                               color: "orange",
                               background: "black",
                               textAlign: "center",
+                              border: "solid"
                             }}
                             contractAddress={
                               "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E"

@@ -21,6 +21,8 @@ import Footer from "../components/footer";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Members from "../components/members/mems";
 import { getInitialData, genNextData } from "../components/members/data/indx";
+import Stake from "./stake.tsx"
+import BWYC from "./BWYC(II).tsx";
 
 import React, { useState, useEffect } from "react";
 
@@ -94,155 +96,15 @@ const Mint: NextPage = () => {
   return (
     <>
       <NAVI />
-      <section style={{ position: "static" }}>
-        <hr />
-        <hr />
-        <hr />
-        <hr /> <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <div className={styles.container}>
-          <main className={styles.main}>
-            <img
-              src="https://65a85b91315ca838d7a8472fb0e64f92.ipfscdn.io/ipfs/bafybeihmcojs5j6fion3l6nbehkmmyt6ki7pbgq2sws7qxexdgrthr72xi/0.png"
-              height="300px"
-              style={{ borderRadius: "32px", border: "solid" }}
-            />
-            <hr />
-            <Members data={data} />
-            <hr />
-            {!isContractMetadataLoading && (
-              <div className={styles.heroSection}>
-                <div>
-                  <h4 style={{ textAlign: "center" }}>
-                    {contractMetadata.name}
-                  </h4>
-                  <hr />
-                  <p style={{ fontStyle: "italic" }}>
-                    {contractMetadata.description}
-                  </p>
-                  <hr />
-                  {!isActiveClaimPhaseLoading ? (
-                    <div>
-                      <p>
-                        PHASE:
-                        <p style={{ color: "orange", fontSize: "20px" }}>
-                          {activeClaimPhase?.metadata?.name}
-                        </p>
-                      </p>
-                      <hr />
-                      <p>
-                        Limit:
-                        <p style={{ color: "orange", fontSize: "20px" }}>
-                          Unlimited
-                        </p>
-                      </p>
-                      <hr />
-                      <p>
-                        Price:{" "}
-                        <p style={{ color: "orange", fontSize: "20px" }}>
-                          {ethers.utils.formatUnits(activeClaimPhase?.price!)}{" "}
-                          CORE
-                        </p>
-                      </p>
-                      <hr />
-                    </div>
-                  ) : (
-                    <p>Loading...</p>
-                  )}
-                  {!isTotalSupplyLoading && !isTotalClaimSupplyLoading ? (
-                    <p>
-                      Claimed: <hr />
-                      <p style={{ color: "orange", fontSize: "20px" }}>
-                        {totalClaimSupply?.toNumber()} / 1000
-                      </p>
-                      <hr />
-                      <ProgressBar
-                        maxCompleted={1000 / 10}
-                        bgColor="orange"
-                        labelClassName="label"
-                        completed={totalClaimSupply?.toString() / 10}
-                      />
-                      <hr />
-                    </p>
-                  ) : (
-                    <p>Loading...</p>
-                  )}
-                  {address ? (
-                    !isClaimIneligibilityReasonsLoading ? (
-                      claimIneligibilityReasons?.length! > 0 ? (
-                        claimIneligibilityReasons?.map((reason, index) => (
-                          <p style={{ margin: "10px" }} key={index}>
-                            {reason}
-                          </p>
-                        ))
-                      ) : (
-                        <div>
-                          <hr />
-                          <p style={{ color: "gray" }}>
-                            YOU ARE Eligible TO MINT SII WHALES
-                          </p>
-                          <hr stlye={{ color: "white" }} />
-                          <div className={styles.claimContainer}>
-                            <div className={styles.claimValue}>
-                              <button
-                                className={styles.claimBtn}
-                                onClick={decrement}
-                              >
-                                -
-                              </button>
-                              <input
-                                className={styles.claimInput}
-                                type="number"
-                                value={claimQuantity}
-                                placeHolder="Amount"
-                              />
-                              <button
-                                className={styles.claimBtn1}
-                                onClick={increment}
-                              >
-                                +
-                              </button>
-                            </div>
-                            <hr />
-                            <Web3Button
-                              style={{
-                                color: "orange",
-                                background: "black",
-                                textAlign: "center",
-                              }}
-                              contractAddress={
-                                "0xF6C2584850Fd1F50fc979F72888Fb67CFa39a2C2"
-                              }
-                              action={(contract) =>
-                                contract.erc721.claim(claimQuantity)
-                              }
-                              onSuccess={() => `/profile/${address}`}
-                            >
-                              MINT WHALES
-                            </Web3Button>
-                          </div>
-                          <hr />
-                        </div>
-                      )
-                    ) : (
-                      <p>Please Wait, Checking Eligibility...</p>
-                    )
-                  ) : (
-                    <ConnectWallet />
-                  )}
-                </div>
-              </div>
-            )}
-            <hr />
-          </main>
-        </div>
-      </section>
-      <Profile />
-      <hr />
+      <hr></hr>
+      <hr></hr>
+      <hr></hr>
+      <hr></hr>
+      <hr></hr>
+      <hr></hr>
+      <a href="/#mint" style={{border: "solid", borderRadius: "8px", padding: "10px", margin: "10px", borderColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)"}}>MINT SII</a>
+      <Members data={data} />
+      <Stake />
       <a href="https://gallery.boredwhalesyachtclub.org" style={{border: "solid", borderRadius: "16px", padding: "10px", margin: "10px", borderColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)"}}>VIEW GALLERY</a>
       <Footer />
     </>
