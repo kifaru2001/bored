@@ -34,8 +34,8 @@ const NAVI = (props) => {
         </div>
         <div data-thq="thq-navbar-nav" className="navi-desktop-menu">
           <nav className="navi-links">
-            <a href="/mint" className="navi-text">
-              STAKE
+            <a href="/season2" className="navi-text">
+              SEASON 2
             </a>
             <a
               href="https://whaleverse.boredwhalesyachtclub.org"
