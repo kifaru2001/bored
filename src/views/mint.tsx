@@ -102,8 +102,10 @@ const Mint: NextPage = () => {
       <hr></hr>
       <hr></hr>
       <hr></hr>
-      <a href="/#mint" style={{border: "solid", borderRadius: "8px", padding: "10px", margin: "10px", borderColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)"}}>MINT SII</a>
+    
+ 
       <Members data={data} />
+         <BWYC />
       <Stake />
       <a href="https://gallery.boredwhalesyachtclub.org" style={{border: "solid", borderRadius: "16px", padding: "10px", margin: "10px", borderColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)"}}>VIEW GALLERY</a>
       <Footer />

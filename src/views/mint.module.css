@@ -182,9 +182,9 @@
 .claimContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: auto;
 }
 .claimValue {
   font-size: 13px;
