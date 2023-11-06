@@ -103,7 +103,7 @@ const BWYC: NextPage = () => {
                       Price:{" "}
                       <p style={{ color: "orange", fontSize: "20px" }}>
                         {ethers.utils.formatUnits(activeClaimPhase?.price!)}{" "}
-                        CORE
+                        WHLS
                       </p>
                     </p>
                     <hr />
@@ -174,7 +174,7 @@ const BWYC: NextPage = () => {
                               border: "solid"
                             }}
                             contractAddress={
-                              "0x98E8B58c44e3c7f08171bb57aeD010fDF71B351E"
+                              "0xF6C2584850Fd1F50fc979F72888Fb67CFa39a2C2"
                             }
                             action={(contract) =>
                               contract.erc721.claim(claimQuantity)
