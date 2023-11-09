@@ -103,7 +103,7 @@ const BWYC: NextPage = () => {
                       Price:{" "}
                       <p style={{ color: "orange", fontSize: "20px" }}>
                         {ethers.utils.formatUnits(activeClaimPhase?.price!)}{" "}
-                        WHLS
+                       CORE
                       </p>
                     </p>
                     <hr />
@@ -117,6 +117,7 @@ const BWYC: NextPage = () => {
                     <p style={{ color: "orange", fontSize: "20px" }}>
                       {totalClaimSupply?.toNumber()} / 1000
                     </p>
+                    
                     <hr />
                     <ProgressBar
                       maxCompleted={totalSupply?.toString() / 10}
