@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 
 import Script from "dangerous-html/react";
 import { Helmet } from "react-helmet";
@@ -16,7 +16,7 @@ import NAVI from "../components/navi";
 import "./home.css";
 import BWYC from "../views/BWYC(II).tsx";
 import Page from "./page.tsx";
-import Mints from "./mints.tsx"
+import Mints from "./mints.tsx";
 
 const Home = (props) => {
   return (
@@ -35,15 +35,9 @@ const Home = (props) => {
       </Helmet>
 
       <Note></Note>
-  
 
       <Hero rootClassName="hero-root-class-name"></Hero>
-      <div id="mint"> <Mints /></div>
-     
-      <Slider></Slider>
-      <Objectives></Objectives>
-      <Growth></Growth>
-      <Experience></Experience>
+      <div id="mint"> </div>
 
       <Create></Create>
       <Footer></Footer>

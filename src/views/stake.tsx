@@ -70,7 +70,7 @@ const Stake: NextPage = () => {
           margin: "5%",
           fontSize: "25px",
           width: "100%",
-          textAlign: "center"
+          textAlign: "center",
         }}
       >
         LOADING...
@@ -80,6 +80,7 @@ const Stake: NextPage = () => {
 
   return (
     <>
+      <NAVI />
       <div className={styles.container}>
         <hr />
         <hr />
@@ -132,7 +133,11 @@ const Stake: NextPage = () => {
               {ownedNfts?.map((nft) => (
                 <div key={nft.metadata.id.toString()}>
                   <ThirdwebNftMedia
-                    style={{ borderRadius: "32px", width: "100%", height: "250px" }}
+                    style={{
+                      borderRadius: "32px",
+                      width: "100%",
+                      height: "250px",
+                    }}
                     metadata={nft.metadata}
                     className={styles.nftMedia}
                   />
@@ -145,7 +150,7 @@ const Stake: NextPage = () => {
                       borderStyle: "solid",
                       borderColor: "Orange",
                       color: "Orange",
-                      alignItems: "center"
+                      alignItems: "center",
                     }}
                     contractAddress={stakingContractAddress}
                     action={() => stakeNft(nft.metadata.id)}

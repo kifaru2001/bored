@@ -24,7 +24,7 @@ const NAVI = (props) => {
       <header data-thq="thq-navbar" className="navi-navbar-interactive">
         <div className="navi-container1">
           <Link to="/" className="navi-navlink">
-            <img alt="logo" src="/favicon-200h.png" className="navi-image" />
+            <img alt="logo" src="/newlogo.png" className="navi-image" />
           </Link>
           <div className="navi-container2">
             <Link to="/" className="navi-navlink1">
@@ -56,10 +56,10 @@ const NAVI = (props) => {
               ARCADE
             </a>
             <a
-              href="https://marketplace.boredwhalesyachtclub.org"
+              href="/stake"
               className="navi-text04"
             >
-              MARKETPLACE
+             STAKE
             </a>
           </nav>
           <ConnectWallet
@@ -205,7 +205,7 @@ const NAVI = (props) => {
 NAVI.defaultProps = {
   image_alt: "image",
   rootClassName: "",
-  text: "BWYC II",
+  text: "BWYC",
   image_alt1: "image",
   image_src1: "100ab059-0d4e-4401-98a5-fe6ea8ee3260",
   image_src: "a61da074-813d-4053-be61-2454ce5558e3",
