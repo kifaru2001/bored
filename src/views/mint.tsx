@@ -21,7 +21,7 @@ import Footer from "../components/footer";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Members from "../components/members/mems";
 import { getInitialData, genNextData } from "../components/members/data/indx";
-import Stake from "./stake.tsx"
+import Stake from "./stake.tsx";
 import BWYC from "./BWYC(II).tsx";
 
 import React, { useState, useEffect } from "react";
@@ -102,12 +102,36 @@ const Mint: NextPage = () => {
       <hr></hr>
       <hr></hr>
       <hr></hr>
-    
- 
+
       <Members data={data} />
-         <BWYC />
-   
-      <a href="https://gallery.boredwhalesyachtclub.org" style={{border: "solid", borderRadius: "16px", padding: "10px", margin: "10px", borderColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)"}}>VIEW GALLERY</a>
+      <a
+        href="https://gallery.boredwhalesyachtclub.org"
+        style={{
+          border: "solid 0.5px",
+          borderRadius: "8px",
+          padding: "20px",
+          margin: "50px",
+          backgroundColor: "rbga (255, 255, 255, 0.5)",
+          borderColor:
+            "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)",
+        }}
+      >
+        STAKING
+      </a>
+      <a
+        href="https://gallery.boredwhalesyachtclub.org"
+        style={{
+          border: "solid 0.5px",
+          borderRadius: "8px",
+          padding: "20px",
+          margin: "50px",
+          backgroundColor: "rbga (255, 255, 255, 0.5)",
+          borderColor:
+            "linear-gradient(0deg, rgba(34,193,195, 1) 2%, rgba(253,187,45, 1) 100%)",
+        }}
+      >
+        GALLERY
+      </a>
       <Footer />
     </>
   );

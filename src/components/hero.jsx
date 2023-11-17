@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import { MotionAnimate } from "react-motion-animate";
 import Mint from "../views/mint.tsx";
 
-
 import "./hero.css";
 
 const Hero = (props) => {
@@ -92,6 +91,18 @@ const Hero = (props) => {
                 scrollPositions={[0.2, 0.5, 0.6, 0.8]}
               >
                 ENTER SEASON II{" "}
+              </MotionAnimate>
+            </span>
+          </Link>
+          <Link to="/" className="hero-navlink button">
+            <span className="hero-text4">
+              {" "}
+              <MotionAnimate
+                animation="scrollOpacity"
+                ease={[0.17, 0.67, 0.97, -0.48]}
+                scrollPositions={[0.2, 0.5, 0.6, 0.8]}
+              >
+                SEASON I{" "}
               </MotionAnimate>
             </span>
           </Link>
