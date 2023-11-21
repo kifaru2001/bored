@@ -14,7 +14,6 @@ import Create from "../components/create";
 import Footer from "../components/footer";
 import NAVI from "../components/navi";
 import "./home.css";
-import BWYC from "../views/Mint.js";
 import Page from "./page.tsx";
 
 const Home = (props) => {
@@ -49,7 +48,7 @@ const Home = (props) => {
         </React.Fragment>
       </div>
       <Hero rootClassName="hero-root-class-name"></Hero>
-    
+
       <Create></Create>
       <Footer></Footer>
       <div>
