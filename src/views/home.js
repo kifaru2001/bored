@@ -47,6 +47,7 @@ const Home = (props) => {
           />
         </React.Fragment>
       </div>
+      
       <Hero rootClassName="hero-root-class-name"></Hero>
 
       <Create></Create>
