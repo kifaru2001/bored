@@ -51,6 +51,7 @@ const Home = (props) => {
       <div id="stake" style={{ height: "100%" }}>
         <Stake />
       </div>
+      <Slider />
       <Create></Create>
       <Footer></Footer>
       <div>
