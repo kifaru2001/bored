@@ -14,9 +14,8 @@ import Create from "../components/create";
 import Footer from "../components/footer";
 import NAVI from "../components/navi";
 import "./home.css";
-import BWYC from "../views/BWYC(II).tsx";
+import BWYC from "../views/Mint.js";
 import Page from "./page.tsx";
-import Stake from "./mints.tsx";
 
 const Home = (props) => {
   return (
@@ -50,7 +49,7 @@ const Home = (props) => {
         </React.Fragment>
       </div>
       <Hero rootClassName="hero-root-class-name"></Hero>
-      <Stake />
+    
       <Create></Create>
       <Footer></Footer>
       <div>

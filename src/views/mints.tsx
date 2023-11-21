@@ -19,7 +19,6 @@ import {
 import styles from "../styles/Home.module.css";
 import NAVI from "../components/navi.js";
 import Mint from "./mint.js";
-import BWYC from "./BWYC(II).tsx";
 
 const Mints: NextPage = () => {
   const address = useAddress();
@@ -70,7 +69,7 @@ const Mints: NextPage = () => {
           margin: "5%",
           fontSize: "25px",
           width: "100%",
-          textAlign: "center"
+          textAlign: "center",
         }}
       >
         LOADING...
@@ -86,7 +85,7 @@ const Mints: NextPage = () => {
 
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
- <BWYC />
+        <Mint />
       </div>
     </>
   );
