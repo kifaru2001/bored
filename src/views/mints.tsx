@@ -85,7 +85,6 @@ const Mints: NextPage = () => {
 
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
         <Mint />
-        <Stake />
       </div>
     </>
   );

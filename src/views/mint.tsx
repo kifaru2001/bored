@@ -116,6 +116,7 @@ const Mint: NextPage = () => {
             backgroundColor: "gray",
           }}
         />
+        <Stake />
       </React.Fragment>
       <a
         href="https://gallery.boredwhalesyachtclub.org"
