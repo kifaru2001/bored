@@ -104,20 +104,18 @@ const Mint: NextPage = () => {
       <hr></hr>
 
       <Members data={data} />
-      <a
-        href="https://gallery.boredwhalesyachtclub.org"
-        style={{
-          border: "solid 0.5px",
-          borderRadius: "8px",
-          padding: "20px",
-          margin: "50px",
-          backgroundColor: "rbga (255, 255, 255, 0.5)",
-          borderColor:
-            "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)",
-        }}
-      >
-        STAKING
-      </a>
+      <React.Fragment>
+        <iframe
+          src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0xF6C2584850Fd1F50fc979F72888Fb67CFa39a2C2&chain=%7B%22name%22%3A%22Core+Blockchain+Mainnet%22%2C%22chain%22%3A%22Core%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fcore-blockchain.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Core+Blockchain+Native+Token%22%2C%22symbol%22%3A%22CORE%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22core%22%2C%22chainId%22%3A1116%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22core-blockchain%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmeTQaBCkpbsxNNWTpoNrMsnwnAEf1wYTcn7CiiZGfUXD2%22%2C%22width%22%3A200%2C%22height%22%3A217%2C%22format%22%3A%22png%22%7D%7D&clientId=678d5b0199cde588796872ea22804505&theme=system&primaryColor=blue"
+          width="100%"
+          height="100%"
+          style={{
+            border: "2px solid gray",
+            borderRadius: "16px",
+            backgroundColor: "gray",
+          }}
+        />
+      </React.Fragment>
       <a
         href="https://gallery.boredwhalesyachtclub.org"
         style={{

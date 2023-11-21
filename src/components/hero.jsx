@@ -11,16 +11,6 @@ const Hero = (props) => {
   return (
     <>
       <section className={`hero-hero ${props.rootClassName} `}>
-        <video
-          src="https://bafybeigwa4vl5xexkc6xuluukiqvrwsetth2y2bnat64peqpcwlt4t7qru.ipfs.nftstorage.link/ipfs/bafybeigwa4vl5xexkc6xuluukiqvrwsetth2y2bnat64peqpcwlt4t7qru/START.mp4"
-          loop
-          muted
-          preload="auto"
-          autoPlay
-          playsInline
-          className="hero-video"
-        ></video>
-
         <div className="hero-hero-content">
           <div className="hero-header-container">
             <div className="hero-header">
@@ -94,7 +84,10 @@ const Hero = (props) => {
               </MotionAnimate>
             </span>
           </Link>
-          <Link to="/" className="hero-navlink button">
+          <a
+            href="https://app.youngparrotnft.com/core/launchpads/bwyc"
+            className="hero-navlink button"
+          >
             <span className="hero-text4">
               {" "}
               <MotionAnimate
@@ -102,10 +95,10 @@ const Hero = (props) => {
                 ease={[0.17, 0.67, 0.97, -0.48]}
                 scrollPositions={[0.2, 0.5, 0.6, 0.8]}
               >
-                SEASON I{" "}
+                ENTER SEASON I🦜{" "}
               </MotionAnimate>
             </span>
-          </Link>
+          </a>
         </div>
       </section>
     </>
