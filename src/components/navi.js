@@ -55,11 +55,11 @@ const NAVI = (props) => {
             >
               ARCADE
             </a>
-            <a
-              href="/stake"
-              className="navi-text04"
-            >
-             STAKE
+            <a href="/#stake" className="navi-text04">
+              STAKE
+            </a>
+            <a href="https://rarebay.xyz" className="navi-text04">
+              RAREBAY
             </a>
           </nav>
           <ConnectWallet
@@ -133,7 +133,7 @@ const NAVI = (props) => {
               </div>
             </div>
             <nav className="navi-links1">
-              <a href="#stake" className="navi-text01">
+              <a href="/#stake" className="navi-text01">
                 STAKE
               </a>
               <hr />
@@ -151,11 +151,8 @@ const NAVI = (props) => {
                 ORDINALS
               </a>
               <hr />
-              <a
-                href="https://marketplace.boredwhalesyachtclub.org"
-                className="navi-text01"
-              >
-                MARKETPLACE
+              <a href="/" className="navi-text01">
+                RAREBAY
               </a>
               <hr />
               <a
