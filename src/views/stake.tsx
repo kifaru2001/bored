@@ -80,13 +80,7 @@ const Stake: NextPage = () => {
 
   return (
     <>
-      <NAVI />
       <div className={styles.container}>
-        <hr />
-        <hr />
-        <hr />
-        <hr />
-        <hr />
         <hr />
         <img alt="logo" width={200} height={200} src="/whls.png" />
 

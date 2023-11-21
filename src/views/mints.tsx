@@ -84,8 +84,8 @@ const Mints: NextPage = () => {
         <img alt="logo" width={200} height={200} src="/whls.png" />
 
         <hr className={`${styles.divider} ${styles.spacerTop}`} />
-
         <Mint />
+        <Stake />
       </div>
     </>
   );
