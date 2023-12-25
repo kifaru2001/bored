@@ -6,6 +6,7 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
+import Snowfall from "react-snowfall";
 
 import "./style.css";
 import Home from "./views/home";
@@ -35,6 +36,7 @@ const App = () => {
         activeChain={activeChain}
         clientId="65a85b91315ca838d7a8472fb0e64f92"
       >
+        <Snowfall />
         <Router>
           <Switch>
             <Route component={Home} exact path="/" />
@@ -45,6 +47,7 @@ const App = () => {
             <Route component={Profile} exact path="/profile" />
             <Route component={ComingSoon} exact path="/coming-soon" />
             <Route component={NotFound} path="**" />
+
             <Redirect to="**" />
           </Switch>
         </Router>
