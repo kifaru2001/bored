@@ -32,7 +32,6 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
           <h5 style={{ textAlign: "center" }}>{nft.metadata.name}</h5>
           <hr />
           <Web3Button
-            isDisabled
             style={{
               backgroundColor: "black",
               borderStyle: "solid",
@@ -47,7 +46,7 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
             }
             contractAddress={stakingContractAddress}
           >
-            LOCKED
+            UNLOCKED
           </Web3Button>
           <hr />
         </div>
