@@ -6,7 +6,6 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
-import Snowfall from "react-snowfall";
 
 import "./style.css";
 import Home from "./views/home";

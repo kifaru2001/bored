@@ -27,7 +27,7 @@ const Hero = (props) => {
                     >
                       <MotionAnimate
                         animation="scrollPosition"
-                        xPos={[300, -760]}
+                        xPos={[500, -560]}
                       >
                         <span className="hero-text">
                           Bored Whales Yacht Club{" "}
@@ -60,12 +60,12 @@ const Hero = (props) => {
 
             <MotionAnimate animation="scrollOpacity">
               <p className="hero-caption">
-              10K Whales on CORE, A inflation Proof NFT intergrated with Rarity. Owners can Stake to earn Ecosystem Token on RareBay DEX and YoungParrot NFT Marketplace.
-              Whales Token can be traded on RareBay Swap, and Holders can provide Liquididty to earn RareCoin Liquidity Poool Share for every swap in Ratio of Staked tokens.
+              10K Whales on CORE, Whales inflation Proof NFT intergrated with rarity. Owners can Stake to earn Ecosystem Token on RareBay DEX and YoungParrot NFT Marketplace.
+              Whales Token can be traded on RareBay Swap, and Holders can provide Liquididty to earn RareCoin Liquidity Poool Share for every swap in Ratio of pooled token tokens.
               </p>
             </MotionAnimate>
           </div>
-
+<div style={{display: "flex", gap: "1%", justifyContent: "center", alignItems: "center", width: "100%"}}>
           <Link to="/season2" className="hero-navlink button">
             <span className="hero-text4">
               {" "}
@@ -74,7 +74,7 @@ const Hero = (props) => {
                 ease={[0.17, 0.67, 0.97, -0.48]}
                 scrollPositions={[0.2, 0.5, 0.6, 0.8]}
               >
-                ENTER SEASON II{" "}
+                LEADERBOARD{" "}
               </MotionAnimate>
             </span>
           </Link>
@@ -86,7 +86,7 @@ const Hero = (props) => {
                 ease={[0.17, 0.67, 0.97, -0.48]}
                 scrollPositions={[0.2, 0.5, 0.6, 0.8]}
               >
-                STAKE WHALES ⚡
+                NFT POOL
               </MotionAnimate>
             </span>
           </a>
@@ -101,10 +101,11 @@ const Hero = (props) => {
                 ease={[0.17, 0.67, 0.97, -0.48]}
                 scrollPositions={[0.2, 0.5, 0.6, 0.8]}
               >
-                ENTER SEASON I🦜{" "}
+            SEASON I{" "}
               </MotionAnimate>
             </span>
           </a>
+        </div>
         </div>
       </section>
     </>

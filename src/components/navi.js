@@ -14,6 +14,7 @@ import {
 } from "@thirdweb-dev/react";
 import { MotionAnimate } from "react-motion-animate";
 
+
 import PropTypes from "prop-types";
 
 import "./navi.css";
@@ -35,7 +36,7 @@ const NAVI = (props) => {
         <div data-thq="thq-navbar-nav" className="navi-desktop-menu">
           <nav className="navi-links">
             <a href="/season2" className="navi-text">
-              SEASON 2
+                LEADERBOARD
             </a>
             <a
               href="https://arcade.boredwhalesyachtclub.org"

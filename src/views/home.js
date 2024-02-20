@@ -32,7 +32,9 @@ const Home = (props) => {
         />
       </Helmet>
       <Note></Note>
-      <div></div>
+      <div  style={{position: "fixed",  zIndex: "-1",  width: "100%", height: "100%", justifyContent: "center", alignItems: "center", display: "flex"}}>
+<div style={{position: "fixed", zIndex: "-1"}} className="gradient" />
+</div>
       <Hero rootClassName="hero-root-class-name"></Hero>
       <div id="mint" style={{ height: "auto" }}>
       </div>

@@ -5,7 +5,6 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
-  background-color: #232323;
 }
 .home-container2 {
   display: contents;
@@ -18,5 +17,34 @@
 @media (max-width: 479px) {
   .home-container {
     background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 300px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+z-index: -1;
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  background-position: center;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
   }
 }
