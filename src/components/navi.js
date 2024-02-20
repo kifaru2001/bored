@@ -38,25 +38,10 @@ const NAVI = (props) => {
               SEASON 2
             </a>
             <a
-              href="https://whaleverse.boredwhalesyachtclub.org"
-              className="navi-text01"
-            >
-              DAO
-            </a>
-            <a
-              href="https://ordinals.boredwhalesyachtclub.org"
-              className="navi-text02"
-            >
-              SATS
-            </a>
-            <a
               href="https://arcade.boredwhalesyachtclub.org"
               className="navi-text03"
             >
               ARCADE
-            </a>
-            <a href="/#stake" className="navi-text04">
-              STAKE
             </a>
             <a href="https://rarebay.xyz" className="navi-text04">
               RAREBAY

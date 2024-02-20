@@ -60,14 +60,8 @@ const Hero = (props) => {
 
             <MotionAnimate animation="scrollOpacity">
               <p className="hero-caption">
-                10000 Provably rare PFPS BORN ON CORE BLOCKCHAIN. SEASON II IS
-                GOING TO EVOLVE INTO WILD THINGS WE AN NOT YET PREDICT.
-                IT&apos;S UPON THE HOLDER TO DECIDE, DO YOU WANT TO TAKE YOUR
-                WHALE ON A BUMPY RIDE AND BATTLE THE WAVES, OR DO YOU JUST WANT
-                TO LET IT CHILL IN ITS COMFY BLOCK AND EARN WHLS REWADS.
-                IRREGADLESS, YOU CAN SWIM FREE, IT&apos;S A BIG PERMISSIONLESS
-                OCEAN JUST FOR US. BWYC AND WHALECARD HOLDERS WILL BE ADDED TO
-                WHITELIST.
+              10K Whales on CORE, A inflation Proof NFT intergrated with Rarity. Owners can Stake to earn Ecosystem Token on RareBay DEX and YoungParrot NFT Marketplace.
+              Whales Token can be traded on RareBay Swap, and Holders can provide Liquididty to earn RareCoin Liquidity Poool Share for every swap in Ratio of Staked tokens.
               </p>
             </MotionAnimate>
           </div>

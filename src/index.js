@@ -36,7 +36,6 @@ const App = () => {
         activeChain={activeChain}
         clientId="65a85b91315ca838d7a8472fb0e64f92"
       >
-        <Snowfall />
         <Router>
           <Switch>
             <Route component={Home} exact path="/" />
